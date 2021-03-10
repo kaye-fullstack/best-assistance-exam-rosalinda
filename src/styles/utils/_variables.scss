@@ -1,0 +1,62 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+$font-opensans-semibold: 'OpenSans-Semibold';
+$font-opensans-bold: 'OpenSans-Bold';
+$font-opensans-light: 'OpenSans-Light';
+$font-opensans-regular: 'OpenSans-Regular';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// @type Color
+$dark-gray:  #282828;
+$light-gray: #6b675a;
+$mostly-black: #282828;
+$white: #fff;
+$yellow: #f8a845;
+$yellowish: #ffa452;
+$blue: #2574b6;
+$very-light-blue: #278dd7;
+$very-light-gray: #f0f0f0;
+$very-dark-blue: #1e2f7d;
+$dark-blue: #0076b1;
+$light-blue:  #184d78;
+$light-green: #9bbb58;
+$brown: #b06d16;
+$thin-blue:#0076b1;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;

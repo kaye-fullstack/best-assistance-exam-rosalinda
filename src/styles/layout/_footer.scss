@@ -1,0 +1,608 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.section-footer-top {
+  background-image: url('../../assets/images/26.fw.png');
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .footer-app {
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .box-assistance-app {
+    padding-top: 108px;
+  }
+
+  .heading-app {
+    font-size: 40px;
+    font-family: $font-opensans-bold;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  .desc-app {
+    font-size: 17px;
+    font-family: $font-opensans-regular;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  .img-box-app {
+    padding: 22px 0;
+  }
+
+  .img-phone {
+    margin-top: -164px;
+    margin-left: 31px;
+  }
+
+  .img-google-play {
+    margin-left: 13px;
+    cursor: pointer;
+  }
+
+  .img-app-store {
+    cursor: pointer;
+  }
+
+  .footer-box {
+    padding: 45px 40px 38px 59px;
+  }
+
+  .footer-boxes {
+    padding: 0 60px 0 50px;
+  }
+
+  .icon-holder-share,
+  .icon-holder-feedback {
+    padding-left:5px;
+  }
+
+  .icon-holder-phone {
+    padding-left: 37px
+  }
+
+  .share-desc {
+    font-size: 15px;
+    font-family: $font-opensans-regular;
+    color: $white;
+    padding: 34px 0 15px 7px;
+    line-height: 28px;
+    opacity: .8;
+  }
+
+  .share-link {
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    opacity: .9;
+    padding-left: 6px;
+  }
+
+  .box-center {
+    padding: 40px 40px  38px 56px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+  .feedback-desc {
+    font-size: 15px;
+    font-family: $font-opensans-regular;
+    color: $white;
+    padding: 16px 6px 13px;
+    line-height: 28px;
+    opacity: .8;
+  }
+
+  .feedback-link {
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    opacity: 0.9;
+    margin-left: 6px;
+  }
+
+  .contact-desc {
+    font-size: 36px;
+    font-family: $font-opensans-bold;
+    color: $white;
+    padding: 42px 0 23px;
+    padding-left: 31px;
+    line-height: 28px;
+    opacity: .8;
+  }
+
+  .contact-link {
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-left: 37px;
+    opacity: 0.9;
+  }
+
+  .text-contact {
+    display: none;
+  }
+
+  .footer-koein  {
+    display: none;
+  }
+}
+
+.section-footer-bottom {
+  width: 100%;
+  height: 120px;
+  background-color: $white;
+
+  .footer-list-items {
+    padding: 23px 0px;
+    margin-top: 17px;
+  }
+
+  .list-items {
+    display: inline-block;
+    font-family: $font-opensans-regular;
+    text-decoration: none;
+    padding: 11px 40px;
+    margin-left: -33px;
+    font-size: 13px;
+  }
+
+  .footer-icon-list {
+    padding: 22px 0px;
+    text-align: right;
+    margin: 0;
+  }
+
+  .icon-items {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 4px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $mostly-black;
+  }
+}
+
+@media only screen and (min-width:2000px) {
+  .section-footer-top {
+    .box-assistance-app {
+      padding-left: 25px;
+    }
+
+    .img-phone {
+      margin-top: -22%;
+      margin-left: 9%;
+    }
+
+    .footer-boxes {
+      padding: 0px 68px 0 62px;
+    }
+
+    .footer-box {
+      padding: 45px 59px 38px 59px;
+    }
+
+    .box-center {
+      padding: 40px 96px 38px 99px;
+    }
+
+    .text-contact {
+      display: block;
+      font-size: 15px;
+      color: #fff;
+      padding: 6% 6% 0;
+    }
+
+    .contact-desc {
+      font-size: 35px;
+      padding: 0 0 0 28px;
+    }
+  }
+
+  .section-footer-bottom {
+    .icon-items {
+      padding: 14px 4px 14px 6px;
+    }
+  }
+}
+
+
+@include respond-to (lg) {
+  .section-footer-top {
+    width: 100%;
+    height: auto;
+
+    .box-assistance-app {
+      padding: 27px 20px;
+    }
+
+    .img-phone {
+     width: 100%;
+     margin-top: -34%;
+     margin-left: 1%;
+    }
+
+    .footer-box {
+      padding: 34px 20px 50px 10px;
+    }
+
+    .box-center {
+      padding: 34px 20px 50px 33px;
+    }
+
+    .contact-desc {
+      font-size: 34px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .section-footer-bottom {
+    width: 100%;
+    height: auto;
+
+    .footer-icon-list {
+      padding: 19px 10px ;
+    }
+  }
+}
+
+@include respond-to (md){
+  .section-footer-top {
+    width: 100%;
+    height: auto;
+
+    .box-assistance-app {
+      padding-top: 0;
+      padding-left: 6px;
+    }
+
+    .footer-app {
+      padding: 37px 13px 0;
+    }
+
+    .heading-app {
+      font-size: 25px;
+      margin-bottom: 1px;
+    }
+
+    .desc-app {
+      font-size: 14px;
+      margin-right: 29%;
+      line-height: 1.7;
+    }
+
+    .img-box-app {
+      padding: 7px 0 30px;
+    }
+
+    .img-app-store,
+    .img-google-play {
+      width: 33%;
+    }
+    
+    .img-phone {
+      width: 97%;
+      height: auto;
+      position: absolute;
+      right: 34px;
+      bottom: -1%;
+    }
+
+    .footer-boxes {
+      padding: 0;
+    }
+
+    .footer-box {
+      padding: 23px 10px 15px 17px;
+    }
+
+    .box-center {
+      border: none;
+      padding: 23px 0px 15px 33px;
+    }
+    .icon-holder-share {
+      width: 22%;
+    }
+
+    .share-desc {
+      padding: 14px 0 2px 6px;
+      line-height: 24px; 
+      font-size: 14px; 
+    }
+
+    .share-link {
+      font-size: 12px;
+    }
+
+    .icon-holder-feedback {
+      width: 22%;
+    }
+
+    .feedback-desc {
+      padding: 5px 0 2px 6px;
+      margin-bottom: 0;
+      line-height: 24px;
+      font-size: 14px; 
+    }
+
+    .feedback-link {
+      font-size: 12px;
+    }
+
+    .icon-holder-phone {
+      width: 14%;
+      padding-left: 0;
+      margin-left: 46px;
+    }
+
+    .text-contact {
+      display: block;
+      color: white;
+      font-size: 14px;
+      padding: 14px 44px 1px;
+      margin-bottom: 0;
+    }
+
+    .contact-desc {
+      font-size: 25px;
+      padding: 5px 0 39px 44px;
+    }
+
+    .contact-link {
+      font-size: 12px;
+      margin-left: 52px;
+    }
+
+    .footer-koein {
+      display: block;
+      color: $white;
+      font-size: 13px;
+      padding: 23px 3px 15px;
+      margin-top: 20px;
+      margin-left: 22px;
+    }
+  }
+  .section-footer-bottom {
+    display: none;
+  }
+}
+
+@include respond-to (sm){
+  .section-footer-top {
+    width: 100%;
+    height: auto;
+    
+    .box-assistance-app {
+     padding: 0 27px;
+    }
+
+    .heading-app {
+      font-size: 25px;
+    }
+
+    .desc-app {
+      font-size: 15px;
+    }
+
+    .img-phone {
+      display: none;
+    }
+
+    .img-box-app {
+      padding: 22px 0;
+    }
+ 
+    .img-app-store {
+      width: 133px;
+    }
+
+    .img-google-play {
+      width: 133px;
+    }
+
+    .footer-boxes {
+      padding: 20px 0;
+    }
+
+    .footer-box {
+      padding: 29px 36px 9px 39px;
+    }
+
+    .share-desc {
+      font-size: 14px;
+      padding: 23px 0 10px 7px;
+    }
+
+    .share-link,
+    .feedback-link {
+      font-size: 12px;
+    }
+
+    .feedback-desc {
+      font-size: 14px;
+      padding: 23px 0 10px 7px;
+    }
+
+    .icon-holder-share,
+    .icon-holder-feedback {
+      width: 40px;
+    }
+
+    .icon-holder-phone {
+      padding-left: 5px;
+      width: 30px;
+    }
+
+    .text-contact {
+      display: block;
+      color: white;
+      font-size: 14px;
+      padding: 11px 0 2px;
+      margin-bottom: 0;
+    }
+
+    .contact-desc {
+      font-size: 24px;
+      padding: 27px 0 13px;
+    }
+
+    .contact-link {
+      margin-left: 0;
+      padding: 0 0 4px 6px;
+      font-size: 12px;
+    }
+
+    .footer-koein {
+      display: block;
+      color: #fff;
+      font-size: 13px;
+      padding: 23px 3px 10px;
+      margin-left: 39px;
+    }
+  }
+
+  .section-footer-bottom {
+    display: none;
+  }
+}
+
+@include respond-to (xs){ 
+  .section-footer-top {
+    width: 100%;
+    height: auto;
+
+    .footer-app {
+      padding-top: 0;
+    }
+
+    .box-assistance-app  {
+      padding: 25px 12px;
+    }
+
+    .heading-app {
+      font-size: 26px;
+      padding-top: 5px;
+      margin: 0;
+    }
+
+    .desc-app {
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .img-box-app {
+      padding: 4px 0;
+    }
+
+    .img-app-store {
+      width: 47%;
+    }
+
+    .img-google-play {
+      width: 47%;
+      margin-left: 11px;
+    }
+
+    .img-phone {
+      display: none;
+    }
+
+    .footer-boxes {
+     padding: 0 22px 11px;
+    }
+
+    .footer-box {
+      padding: 20px 10px 5px 4px;
+    }
+
+    .icon-holder-share {
+      padding-left: 5px;
+      width: 48px;
+    }
+
+    .share-desc {
+      padding-top: 15px;
+      padding-bottom: 2px;
+      line-height: 26px;
+    }
+
+    .share-link {
+      font-size: 12px;
+      padding-left: 9px;
+    }
+
+    .box-center {
+      border: none;
+    }
+
+    .icon-holder-feedback {
+      padding-left: 5px;
+      width: 48px;
+    }
+
+    .feedback-desc {
+      padding-top: 15px;
+      padding-bottom: 2px;
+      line-height: 24px;
+    }
+
+    .feedback-link {
+      font-size: 12px;
+    } 
+
+    .icon-holder-phone {
+      padding-left: 5px;
+      width: 36px;
+      padding-top: 20px;
+    }
+
+    .contact-desc {
+      padding-top: 5px;
+      padding-bottom: 2px;
+      padding-left: 0;
+      font-size: 25px;
+    }
+
+    .text-contact {
+      display: block;
+      color: white;
+      font-size: 14px;
+      padding: 11px 0 2px;
+      margin-bottom: 0;
+    }
+
+    .contact-link {
+      font-size: 12px;
+      padding-left: 5px;
+      margin-left: 0;
+    }
+
+    .footer-koein {
+      display: block;
+      color: white;
+      font-size: 12px;
+      padding:23px 3px 5px;
+      margin-top: 11px;
+    }
+  }
+
+  .section-footer-bottom {
+    display: none;
+  }
+}

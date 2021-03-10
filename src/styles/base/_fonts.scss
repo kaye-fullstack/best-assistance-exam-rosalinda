@@ -1,0 +1,15 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+@include font-face($font-opensans-semibold, $base-url + 'fonts/', 'OpenSans-Semibold', 'OpenSans-Semibold');
+
+@include font-face($font-opensans-bold, $base-url + 'fonts/', 'OpenSans-Bold', 'OpenSans-Bold');
+
+@include font-face($font-opensans-light, $base-url + 'fonts/', 'OpenSans-Light', 'OpenSans-Light');
+
+@include font-face($font-opensans-regular, $base-url + 'fonts/', 'OpenSans-Regular', 'OpenSans-Regular');
