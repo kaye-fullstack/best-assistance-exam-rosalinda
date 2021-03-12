@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: 10000;
-  padding: 39px 0;
+  padding: 31px 0;
   width: 100%;
   height: auto;
   background: transparent;
@@ -17,9 +17,8 @@
   transition: all 0.4s;
     
   &.sticky {
-    padding: 10px 15px;
-    background-color: $white;
-    transition: all 0.4s;
+    padding: 10px 0;
+    background-color: $white;   
   }
 
   .navbar {
@@ -28,9 +27,14 @@
 
   .brand-logo {
     position: relative;
-    bottom: 14px;
-    max-width: 100%;
+    bottom: 9px;
+    width: 100%;
   }
+
+  .nav-item {
+    margin-right: 11px;
+  }
+ 
  
   .navbar-nav {
     padding-right: 10px;
@@ -38,7 +42,7 @@
     .nav-link {
       display: flex;
       justify-content: space-between;
-      padding: 2px 29px 15px 12px;
+      padding: 14px 13px;
       list-style: none;
       text-decoration: none;
       font-family: $font-opensans-semibold;
@@ -49,54 +53,40 @@
 
   .btn-num {
     position: relative;
-    top: -7px;
-    margin-right: 6px;
-    padding: 14px 28px 13px 34px;
-    font-family: $font-opensans-semibold;
-    font-size: 15px;
-    color: $white;
-    border-radius: 24px;
-    border: none;
-    background-color: $yellow;
-    outline: none;
-    cursor: pointer;
+    left: 25px;
+    padding: 0 10px;
+    background-color: $yellowish;
+    border-radius: 25px;
+
+    .num-desc {
+      color: $white;
+    }
   }
 
-  .desc {
+  .btn-lang {
     position: relative;
-    left: 13px;
-    margin: auto;
-    color: $white;
-  }
-      
-  .icon-holder {
-    position: absolute;
-    top: 17px;
-    left: 24px;
-  }
-
-  .btn-lang  {
-    position: relative;
-    right: 3px;
-    bottom: 5px;
-    padding: 14px 22px 13px;
-    font-family: $font-opensans-semibold;
-    font-size: 15px;
+    left: 18px;
+    border-radius: 25px;
+    padding: 10px 7px 0;
     background-color: $dark-blue;
-    color: $white;
-    text-align: center;
-    border-radius: 24px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
 
-  .submenu {
-    position: absolute;
-    left: 90%;
-    float: right; 
-    margin: 0;
-    padding: 0;
+    .lang-select {
+      margin-right: 21px;
+      margin-top: -4px;
+      font-size: 14px;
+      height: auto;
+      color: $white;
+      background-color: $dark-blue;
+      border-radius: 25px;
+      border: none;
+      appearance: none;
+    }
+
+    .arrow-select {
+      position: absolute;
+      bottom: 21px;
+      left: 48px;
+    }
   }
 
   .link-num {
@@ -110,21 +100,21 @@
   }
 }
 
-@media only screen and (min-width: 2000) {
+@media only screen and  (min-width:2000px) {
   .section-header {
-    padding: 27px 0;
+    padding: 31px 0;
+
+    &.sticky {
+      padding: 10px 0;
+      background-color: $white;   
+    }
 
     .navbar {
-      padding-top: 10px;
-      padding-left: 14px;
+     padding: 0;
     }
 
-    .nav-link {
-      padding: 1px 31px 15px 12px;
-    }
-
-    .btn-num {
-      padding: 14px 38px 13px 34px;
+    .brand-logo {
+      left: 13px;
     }
   }
 }
@@ -133,7 +123,7 @@
   .section-header {
     width: 100%;
     height: auto;
-    padding: 19px 10px;
+    padding: 27px 10px;
     
     &.sticky {
       padding: 12px 10px;
@@ -143,51 +133,75 @@
       padding: 0;
     }
 
-    .brand-logo {
-      width: 79%;
+    .navbar-brand {
+      margin: 0;
+      .brand-logo {
+        width: 75%;
+      }
     }
 
     .navbar-nav {
+      .nav-item {
+        margin-right: 3px;
+      }
+
       .nav-link {
-        padding-right: 10px;
-        font-size: 11px; 
+        padding: 14px 5px;
+        font-size: 13px;
       }
     }
-   
-    .btn-num {
-      font-size: 11px;
-    }
 
-    .icon-holder {
-      top: 13px;
-      left: 23px;
-      width: 12%;
+    .btn-num {
+      left: 8px;
+      padding: 6px 11px 8px;
+  
+      .nav-link {
+        padding: 0;
+        display: unset;
+      }
+
+      .icon-holder {
+        position: relative;
+        bottom: 1px;
+        left: 3px;
+      }
     }
 
     .btn-lang {
-      font-size: 11px;
+      left: 8px;
+
+      .lang-select {
+        margin-right: 13px;
+        margin-top: -8px;
+      }
+
+      .arrow-select {
+        bottom: 20px;
+        left: 68%;
+      }
     }
   }
 }
 
 @include respond-to (md){
   .section-header {
-    padding: 23px 0;
+    padding: 17px 0;
     width: 100%;
     height: auto;
     border-bottom: none;
    
     &.sticky {
-      padding: 14px 0;
+      padding: 8px 0;
     }
 
     .navbar {
-      padding: 0 ;
+      padding: 0;
+      height: 44px;
     }
 
     .collapse {
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -202,7 +216,7 @@
     .collapsing {
       transition: all .3s ease-in;
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%; 
       width: 100%; 
@@ -218,8 +232,8 @@
     .navbar-toggler {
       .icon-bar {
         position: relative;
-        bottom: 1px;
-        right: 35px;
+        bottom: 19px;
+        right: 17px;
         display: block;
         height: 2px;
         width: 25px;
@@ -230,19 +244,23 @@
       }
     }
  
-    .navbar-toggler[aria-expanded=true] .icon-bar:last-child {
-      transform: rotate(-225deg) translate(-4px,4px);
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-6px, -5px);
     }
 
     .brand-logo {
       left: 14px;
       width: 59%;
+      bottom: 31px;
     }
 
-    .nav-link {
-      padding: 15px 0 36px;
-      line-height: 28px;
-      font-size: 13px;
+    .navbar-nav {
+      .nav-link {
+        font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
+      }
     }
   
    .btn-num,
@@ -250,35 +268,38 @@
      display: none;
    }
 
-    #excluded-btn {  
-      display: flex;
-      flex-direction: row;
-      padding: 0 20px;
-      margin-left: 17%;
+   #excluded-btn {
+     .nav-link {
+      padding: 11px 19px 3px;
+      display: block;
+     }
 
-      .btn-num {
-        top: -4px;
-        display: block;
-        padding: 13px 34px 11px 23px;
-        margin-right: 13px;
-       
-      .icon-holder {
-        top: 14px;
-        left: 12px; 
-      }
+     .btn-num {
+      left: 41px;
+      display: block;
+      padding: 0;
 
-      .desc {
+      .num-desc {
         font-size: 13px;
       }
-    }
+     }
 
-    .btn-lang {
-      right: 9px;
-      bottom: 3px;
-      display: block;
-      padding: 10px 18px 13px;
-    }
-  }
+     .btn-lang {
+       display: block;
+       bottom: 43px;
+       left: 95%;
+       padding: 11px 3px 3px;
+
+       .lang-select {
+        margin-top: -9px;
+       }
+
+       .arrow-select {
+        bottom: 18px;
+        left: 46px;
+       }
+     }
+   }
 
     .unstyled-social-items {
       position: absolute;
@@ -308,7 +329,7 @@
     border-bottom: none;
    
     &.sticky {
-      padding: 6px 15px;
+      padding: 10px 15px;
     }
 
     .navbar {
@@ -316,13 +337,14 @@
     }
 
     .brand-logo {
+      right: 15px;
       bottom: 8px;
       width: 68%;
     }
       
     .collapse {
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -338,7 +360,7 @@
     .collapsing {
       transition: all .3s ease-in;
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%; 
       width: 100%; 
@@ -354,8 +376,9 @@
     .icon-bar {
       position: relative;
       bottom: 4px;
-      right: 35px;
+      left: 11px;
       display: block;
+      margin-bottom: 6px;
       height: 2px;
       width: 25px;
       background: $thin-blue;
@@ -363,8 +386,8 @@
       box-shadow: none; 
     }
  
-    .navbar-toggler[aria-expanded=true] .icon-bar:last-child {
-      transform: rotate(-225deg) translate(-4px,4px);
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-6px, -5px);
     }
 
     #excluded-btn {
@@ -374,10 +397,13 @@
       }
     }
 
-    .nav-link {
-      padding: 2px 0 18px;
-      line-height: 28px;
-      font-size: 13px;
+    .navbar-nav {
+      .nav-link {
+        font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
+      }
     }
 
     .navbar-nav {
@@ -386,13 +412,27 @@
     }
 
     .btn-num {
-      display: block;
-      text-align: center;
-      margin: 12px 0 21px;
-      width: 100%;
-     
-      .icon-holder {
-        left: 40%;
+      left: 8px;
+      margin-right: 52%;
+      margin-bottom: 20px;
+      padding: 7px 68px 8px;
+  
+      .nav-link {
+        padding: 0;
+        display: unset;
+      }
+    }
+
+    .btn-lang {
+      bottom: 64px;
+      left: 51%;
+      margin-right: 52%;
+      padding-top: 7px;
+      padding-bottom: 3px;
+
+      .arrow-select {
+        bottom: 18px;
+        left: 78%;
       }
     }
 
@@ -410,6 +450,7 @@
       border-bottom: 1px solid #ededee;
     }
   }
+
   body.lock-scroll {
     overflow: hidden;
   }
@@ -436,7 +477,7 @@
 
     .collapse {
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -451,7 +492,7 @@
     .collapsing {
       transition: all .3s ease-in;
       position: fixed;
-      top: 84px;
+      top: 63px;
       bottom: 0;
       right: -100%; 
       width: 100%; 
@@ -466,9 +507,10 @@
       
     .icon-bar {
       position: relative;
-      bottom: 4px;
-      right: 6px;
+      left: 5px;
+      top: 6px;
       display: block;
+      margin-bottom: 6px;
       height: 2px;
       width: 25px;
       background: $thin-blue;
@@ -476,21 +518,24 @@
       box-shadow: none; 
     }
  
-    .navbar-toggler[aria-expanded=true] .icon-bar:last-child {
-      transform: rotate(-225deg) translate(-4px,4px);
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-6px, -5px);
     }
 
     .brand-logo {
       z-index: 20;
       width: 63%;
-      margin-top: 9px;
-      margin-left: -12px;
+      margin-top: 5px;
+      margin-left: -10px;
     }
-      
-    .nav-link {
-      line-height: 28px;
-      font-size: 13px;
-      margin-bottom: 10px;
+    
+    .navbar-nav {
+      .nav-link {
+        font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
+      }
     }
     
     #excluded-btn {
@@ -501,18 +546,27 @@
     }
 
     .btn-num {
-      padding: 13px 22px;
-      font-size: 13px;
-
-      .icon-holder {
-        top: 15px;
-        left: 17px;
+      left: 8px;
+      margin-right: 49%;
+      margin-bottom: 20px;
+      padding: 6px 16px 8px;
+  
+      .nav-link {
+        padding: 0;
+        display: unset;
       }
     }
 
     .btn-lang {
-      padding: 13px 21px;
-      font-size: 13px;
+      left: 8px;
+      margin-right: 49%;
+      padding-top: 7px;
+      padding-bottom: 3px;
+
+      .arrow-select {
+        bottom: 18px;
+        left: 78%;
+      }
     }
 
     .link {
@@ -536,9 +590,298 @@
     }
   }
 
-  body.lock-scroll {
+ body.lock-scroll {
     overflow: hidden;
   }
 
 }
+
+@media only screen and  (max-width: 320px) {}
+
+@media (max-width: 575px) and  (min-width: 400px) {
+  .section-header {
+    padding: 18px 0;
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    
+    &.sticky {
+      padding: 6px 0;
+    }
+
+    .navbar-brand {
+      margin: 0;
+    }
+
+    .navbar {
+     padding-left: 6px ;
+    }
+
+    .collapse {
+      position: fixed;
+      top: 63px;
+      bottom: 0;
+      right: -100%;
+      z-index: 2000;
+      display: block;
+      padding: 0 12px;
+      width: 0;
+      height: 100% !important;
+      background-color: $white;
+      transition: all .3s ease;
+    }
+
+    .collapsing {
+      transition: all .3s ease-in;
+      position: fixed;
+      top: 63px;
+      bottom: 0;
+      right: -100%; 
+      width: 100%; 
+      height: 100% !important;
+      display: block;
+    }
+    
+    .collapse.show {
+      right: 0;
+      width: 100%;
+    }
+      
+    .icon-bar {
+      position: relative;
+      left: 5px;
+      top: 6px;
+      display: block;
+      margin-bottom: 6px;
+      height: 2px;
+      width: 25px;
+      background: $thin-blue;
+      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+      box-shadow: none; 
+    }
+ 
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-6px, -5px);
+    }
+
+    .brand-logo {
+      z-index: 20;
+      width: 63%;
+      margin-top: 5px;
+      margin-left: -10px;
+    }
+    
+    .navbar-nav {
+      .nav-link {
+        font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
+      }
+    }
+    
+    #excluded-btn {
+      .btn-lang,
+      .btn-num {
+        display: none;
+      }
+    }
+
+    .btn-num {
+      left: 8px;
+      margin-right: 49%;
+      margin-bottom: 20px;
+      padding: 6px 16px 8px;
+  
+      .nav-link {
+        padding: 0;
+        display: unset;
+      }
+    }
+
+    .btn-lang {
+      left: 8px;
+      margin-right: 49%;
+      padding-top: 7px;
+      padding-bottom: 3px;
+
+      .arrow-select {
+        bottom: 18px;
+        left: 78%;
+      }
+    }
+
+    .link {
+      margin-right: 67px;
+    }
+
+
+    .unstyled-social-items {
+      position: absolute;
+      right: 4px;
+      bottom: 86px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      list-style: none;
+      padding: 10px 16px;
+      margin: 0;
+      width: 100%;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
+    }
+  }
+
+ body.lock-scroll {
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 399px) and  (min-width: 321px) {
+  .section-header {
+    padding: 18px 0;
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    
+    &.sticky {
+      padding: 6px 0;
+    }
+
+    .navbar-brand {
+      margin: 0;
+    }
+
+    .navbar {
+     padding-left: 6px ;
+    }
+
+    .collapse {
+      position: fixed;
+      top: 63px;
+      bottom: 0;
+      right: -100%;
+      z-index: 2000;
+      display: block;
+      padding: 0 12px;
+      width: 0;
+      height: 100% !important;
+      background-color: $white;
+      transition: all .3s ease;
+    }
+
+    .collapsing {
+      transition: all .3s ease-in;
+      position: fixed;
+      top: 63px;
+      bottom: 0;
+      right: -100%; 
+      width: 100%; 
+      height: 100% !important;
+      display: block;
+    }
+    
+    .collapse.show {
+      right: 0;
+      width: 100%;
+    }
+      
+    .icon-bar {
+      position: relative;
+      left: 5px;
+      top: 6px;
+      display: block;
+      margin-bottom: 6px;
+      height: 2px;
+      width: 25px;
+      background: $thin-blue;
+      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+      box-shadow: none; 
+    }
+ 
+    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
+      transform: rotate(225deg) translate(-6px, -5px);
+    }
+
+    .brand-logo {
+      z-index: 20;
+      width: 63%;
+      margin-top: 5px;
+      margin-left: -10px;
+    }
+    
+    .navbar-nav {
+      .nav-link {
+        font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
+      }
+    }
+    
+    #excluded-btn {
+      .btn-lang,
+      .btn-num {
+        display: none;
+      }
+    }
+
+    .btn-num {
+      left: 8px;
+      margin-right: 49%;
+      margin-bottom: 20px;
+      padding: 6px 16px 8px;
+  
+      .nav-link {
+        padding: 0;
+        display: unset;
+      }
+    }
+
+    .btn-lang {
+      left: 8px;
+      margin-right: 49%;
+      padding-top: 7px;
+      padding-bottom: 3px;
+
+      .arrow-select {
+        bottom: 18px;
+        left: 78%;
+      }
+    }
+
+    .link {
+      margin-right: 67px;
+    }
+
+
+    .unstyled-social-items {
+      position: absolute;
+      right: 4px;
+      bottom: 86px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      list-style: none;
+      padding: 10px 16px;
+      margin: 0;
+      width: 100%;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
+    }
+  }
+
+ body.lock-scroll {
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 2000px) and  (min-width: 1699px) {}
+
+@media (max-width: 1700px) and  (min-width: 1500px) {}
+
+@media  (max-width: 1499px) and  (min-width: 1200px) {}
+
 

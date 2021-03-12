@@ -39,21 +39,22 @@
   }
 
   .img-phone {
-    margin-top: -164px;
-    margin-left: 31px;
+    margin-top: -160px;
+    margin-left: 32px;
   }
 
   .img-google-play {
-    margin-left: 13px;
+    margin: 2px 0 0 15px;
     cursor: pointer;
   }
 
   .img-app-store {
+    margin: 2px 0 0 2px;
     cursor: pointer;
   }
 
   .footer-box {
-    padding: 45px 40px 38px 59px;
+    padding: 45px 40px 38px 14px;
   }
 
   .footer-boxes {
@@ -66,7 +67,8 @@
   }
 
   .icon-holder-phone {
-    padding-left: 37px
+    padding-left: 98px;
+    margin-top: -6px;
   }
 
   .share-desc {
@@ -89,7 +91,7 @@
   }
 
   .box-center {
-    padding: 40px 40px  38px 56px;
+    padding: 40px 40px  38px 41px;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -117,8 +119,7 @@
     font-size: 36px;
     font-family: $font-opensans-bold;
     color: $white;
-    padding: 42px 0 23px;
-    padding-left: 31px;
+    padding: 49px 0 23px 90px;
     line-height: 28px;
     opacity: .8;
   }
@@ -129,7 +130,7 @@
     font-size: 16px;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
-    margin-left: 37px;
+    margin-left: 97px;
     opacity: 0.9;
   }
 
@@ -179,7 +180,7 @@
   }
 }
 
-@media only screen and (min-width:2000px) {
+@media only screen and  (min-width:2000px)  {
   .section-footer-top {
     .box-assistance-app {
       padding-left: 25px;
@@ -247,8 +248,15 @@
     }
 
     .contact-desc {
-      font-size: 34px;
-      margin-bottom: 70px;
+      font-size: 32px;
+      margin-bottom: 63px;
+      padding: 47px 0 23px 31px;
+      line-height: 23px;
+    }
+
+    .icon-holder-phone {
+      padding-left: 26px;
+      margin-top: 7px;
     }
   }
 
@@ -273,7 +281,7 @@
     }
 
     .footer-app {
-      padding: 37px 13px 0;
+      padding: 34px 13px 0;
     }
 
     .heading-app {
@@ -291,9 +299,12 @@
       padding: 7px 0 30px;
     }
 
-    .img-app-store,
+    .img-app-store {
+      width: 32%;
+      margin: 1px 0 0 4px;
+    }
     .img-google-play {
-      width: 33%;
+      width: 32%;
     }
     
     .img-phone {
@@ -348,7 +359,8 @@
     .icon-holder-phone {
       width: 14%;
       padding-left: 0;
-      margin-left: 46px;
+      margin-left: 44px;
+      margin-top: 1px;
     }
 
     .text-contact {
@@ -492,11 +504,11 @@
     }
 
     .box-assistance-app  {
-      padding: 25px 12px;
+      padding: 29px 14px 27px;
     }
 
     .heading-app {
-      font-size: 26px;
+      font-size: 25px;
       padding-top: 5px;
       margin: 0;
     }
@@ -511,12 +523,13 @@
     }
 
     .img-app-store {
-      width: 47%;
+      width: 46%;
+      margin: 3px 0 0 2px;
     }
 
     .img-google-play {
-      width: 47%;
-      margin-left: 11px;
+      width: 46%;
+      margin: 3px 0 0 11px;
     }
 
     .img-phone {
@@ -524,7 +537,7 @@
     }
 
     .footer-boxes {
-     padding: 0 22px 11px;
+     padding: 0 10px 11px;
     }
 
     .footer-box {
@@ -537,14 +550,14 @@
     }
 
     .share-desc {
-      padding-top: 15px;
-      padding-bottom: 2px;
-      line-height: 26px;
+      font-size: 14px;
+      padding: 15px 10px 0 7px;
+      line-height: 25px;
     }
 
     .share-link {
       font-size: 12px;
-      padding-left: 9px;
+      padding-left: 6px;
     }
 
     .box-center {
@@ -557,8 +570,8 @@
     }
 
     .feedback-desc {
-      padding-top: 15px;
-      padding-bottom: 2px;
+      font-size: 14px;
+      padding: 22px 10px 0 7px;
       line-height: 24px;
     }
 
@@ -583,7 +596,7 @@
       display: block;
       color: white;
       font-size: 14px;
-      padding: 11px 0 2px;
+      padding: 15px 4px 2px;
       margin-bottom: 0;
     }
 
@@ -605,4 +618,28 @@
   .section-footer-bottom {
     display: none;
   }
+}
+
+@media only screen and  (max-width: 320px) {
+
+}
+
+@media (max-width: 575px) and  (min-width: 400px) {
+
+}
+
+@media (max-width: 399px) and  (min-width: 321px) {
+
+}
+
+@media (max-width: 2000px) and  (min-width: 1699px) {
+
+}
+
+@media (max-width: 1700px) and  (min-width: 1500px) {
+
+}
+
+@media  (max-width: 1499px) and  (min-width: 1200px) {
+
 }

@@ -9,10 +9,10 @@ AppName.Modules.ThemeModule = (function () {
     // private stuff
 
     const swiper_banner = new Swiper('.swiper-banner', {
-     //autoplay: {
-      // delay: 2500,
-      //disableOnInteraction: false,
-   // },
+     autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
       pagination: {
         el: '.swiper-pagination-banner',
       },
@@ -66,7 +66,7 @@ AppName.Modules.ThemeModule = (function () {
     function initHeader() {
       var Header = document.querySelector("header");
     
-      var HeaderContainer = document.querySelector(".header");
+      var HeaderContainer = document.querySelector("header");
     
       document.addEventListener('scroll', function () {
             if (window.scrollY > 114) {
