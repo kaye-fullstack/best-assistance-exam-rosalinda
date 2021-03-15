@@ -35,7 +35,6 @@
     margin-right: 11px;
   }
  
- 
   .navbar-nav {
     padding-right: 10px;
 
@@ -49,6 +48,12 @@
       font-size: 15px;
       color: $dark-gray;
     }
+
+    .nav-link:hover {
+     color: #0076b1;
+     text-decoration:2px solid underline;
+     text-underline-offset: 8px;
+    }
   }
 
   .btn-num {
@@ -57,9 +62,14 @@
     padding: 0 10px;
     background-color: $yellowish;
     border-radius: 25px;
+    cursor: pointer;
 
     .num-desc {
       color: $white;
+    }
+
+    .nav-link:hover {
+      text-decoration: none;
     }
   }
 
@@ -69,6 +79,7 @@
     border-radius: 25px;
     padding: 10px 7px 0;
     background-color: $dark-blue;
+    cursor: pointer;
 
     .lang-select {
       margin-right: 21px;
@@ -303,20 +314,21 @@
 
     .unstyled-social-items {
       position: absolute;
-      right: 10px;
-      bottom: 86px;
+      bottom: 63px;
+      right: 0;
       display: flex;
       justify-content: space-between;
-      padding: 10px 16px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
       list-style: none;
+      background-color: $white;
       border-top: 1px solid #ededee;
       border-bottom: 1px solid #ededee;
     }
   }
 
-  body.lock-scroll {
+  .lock-scroll {
     overflow: hidden;
   }
 }
@@ -438,20 +450,21 @@
 
     .unstyled-social-items {
       position: absolute;
-      right: 10px;
-      bottom: 86px;
-      list-style: none;
+      bottom: 63px;
+      right: 0;
       display: flex;
       justify-content: space-between;
-      padding: 10px 16px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
+      list-style: none;
+      background-color: $white;
       border-top: 1px solid #ededee;
       border-bottom: 1px solid #ededee;
     }
   }
 
-  body.lock-scroll {
+  .lock-scroll {
     overflow: hidden;
   }
 }
@@ -576,312 +589,106 @@
 
     .unstyled-social-items {
       position: absolute;
-      right: 4px;
-      bottom: 86px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      list-style: none;
-      padding: 10px 16px;
-      margin: 0;
-      width: 100%;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
-    }
-  }
-
- body.lock-scroll {
-    overflow: hidden;
-  }
-
-}
-
-@media only screen and  (max-width: 320px) {}
-
-@media (max-width: 575px) and  (min-width: 400px) {
-  .section-header {
-    padding: 18px 0;
-    width: 100%;
-    height: auto;
-    border-bottom: none;
-    
-    &.sticky {
-      padding: 6px 0;
-    }
-
-    .navbar-brand {
-      margin: 0;
-    }
-
-    .navbar {
-     padding-left: 6px ;
-    }
-
-    .collapse {
-      position: fixed;
-      top: 63px;
-      bottom: 0;
-      right: -100%;
-      z-index: 2000;
-      display: block;
-      padding: 0 12px;
-      width: 0;
-      height: 100% !important;
-      background-color: $white;
-      transition: all .3s ease;
-    }
-
-    .collapsing {
-      transition: all .3s ease-in;
-      position: fixed;
-      top: 63px;
-      bottom: 0;
-      right: -100%; 
-      width: 100%; 
-      height: 100% !important;
-      display: block;
-    }
-    
-    .collapse.show {
+      bottom: 63px;
       right: 0;
-      width: 100%;
-    }
-      
-    .icon-bar {
-      position: relative;
-      left: 5px;
-      top: 6px;
-      display: block;
-      margin-bottom: 6px;
-      height: 2px;
-      width: 25px;
-      background: $thin-blue;
-      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-      box-shadow: none; 
-    }
- 
-    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
-      transform: rotate(225deg) translate(-6px, -5px);
-    }
-
-    .brand-logo {
-      z-index: 20;
-      width: 63%;
-      margin-top: 5px;
-      margin-left: -10px;
-    }
-    
-    .navbar-nav {
-      .nav-link {
-        font-size: 13px;
-        font-family: $font-opensans-semibold;
-        margin-bottom: 10px;
-        padding: 11px 13px;
-      }
-    }
-    
-    #excluded-btn {
-      .btn-lang,
-      .btn-num {
-        display: none;
-      }
-    }
-
-    .btn-num {
-      left: 8px;
-      margin-right: 49%;
-      margin-bottom: 20px;
-      padding: 6px 16px 8px;
-  
-      .nav-link {
-        padding: 0;
-        display: unset;
-      }
-    }
-
-    .btn-lang {
-      left: 8px;
-      margin-right: 49%;
-      padding-top: 7px;
-      padding-bottom: 3px;
-
-      .arrow-select {
-        bottom: 18px;
-        left: 78%;
-      }
-    }
-
-    .link {
-      margin-right: 67px;
-    }
-
-
-    .unstyled-social-items {
-      position: absolute;
-      right: 4px;
-      bottom: 86px;
       display: flex;
       justify-content: space-between;
-      flex-direction: row;
-      list-style: none;
-      padding: 10px 16px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
+      list-style: none;
+      background-color: $white;
       border-top: 1px solid #ededee;
       border-bottom: 1px solid #ededee;
     }
   }
 
- body.lock-scroll {
+ .lock-scroll {
     overflow: hidden;
   }
 
 }
+
 
 @media (max-width: 399px) and  (min-width: 321px) {
   .section-header {
-    padding: 18px 0;
+    .unstyled-social-items {
+      position: absolute;
+      bottom: 63px;
+      right: 0;
+      justify-content: space-between;
+      display: flex;
+      margin: 0;
+      padding: 10px 15px;
+      width: 100%;
+      list-style: none;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
+    }
+  }
+}
+
+@media (max-width: 1699px) and  (min-width: 1200px)  {
+  .section-header {
     width: 100%;
     height: auto;
-    border-bottom: none;
+    padding: 27px 10px;
     
     &.sticky {
-      padding: 6px 0;
+      padding: 12px 10px;
+    }
+
+    .navbar {
+      padding: 0;
     }
 
     .navbar-brand {
       margin: 0;
-    }
-
-    .navbar {
-     padding-left: 6px ;
-    }
-
-    .collapse {
-      position: fixed;
-      top: 63px;
-      bottom: 0;
-      right: -100%;
-      z-index: 2000;
-      display: block;
-      padding: 0 12px;
-      width: 0;
-      height: 100% !important;
-      background-color: $white;
-      transition: all .3s ease;
-    }
-
-    .collapsing {
-      transition: all .3s ease-in;
-      position: fixed;
-      top: 63px;
-      bottom: 0;
-      right: -100%; 
-      width: 100%; 
-      height: 100% !important;
-      display: block;
-    }
-    
-    .collapse.show {
-      right: 0;
-      width: 100%;
-    }
-      
-    .icon-bar {
-      position: relative;
-      left: 5px;
-      top: 6px;
-      display: block;
-      margin-bottom: 6px;
-      height: 2px;
-      width: 25px;
-      background: $thin-blue;
-      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-      box-shadow: none; 
-    }
- 
-    .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
-      transform: rotate(225deg) translate(-6px, -5px);
-    }
-
-    .brand-logo {
-      z-index: 20;
-      width: 63%;
-      margin-top: 5px;
-      margin-left: -10px;
-    }
-    
-    .navbar-nav {
-      .nav-link {
-        font-size: 13px;
-        font-family: $font-opensans-semibold;
-        margin-bottom: 10px;
-        padding: 11px 13px;
+      .brand-logo {
+        width: 75%;
       }
     }
-    
-    #excluded-btn {
-      .btn-lang,
-      .btn-num {
-        display: none;
+
+    .navbar-nav {
+      .nav-item {
+        margin-right: 12px;
+      }
+
+      .nav-link {
+        padding: 14px 5px;
+        font-size: 13px;
       }
     }
 
     .btn-num {
       left: 8px;
-      margin-right: 49%;
-      margin-bottom: 20px;
-      padding: 6px 16px 8px;
+      padding: 6px 11px 8px;
   
       .nav-link {
         padding: 0;
         display: unset;
       }
+
+      .icon-holder {
+        position: relative;
+        bottom: 1px;
+        left: 3px;
+      }
     }
 
     .btn-lang {
       left: 8px;
-      margin-right: 49%;
-      padding-top: 7px;
-      padding-bottom: 3px;
+
+      .lang-select {
+        margin-right: 13px;
+        margin-top: -8px;
+      }
 
       .arrow-select {
-        bottom: 18px;
-        left: 78%;
+        bottom: 20px;
+        left: 68%;
       }
     }
-
-    .link {
-      margin-right: 67px;
-    }
-
-
-    .unstyled-social-items {
-      position: absolute;
-      right: 4px;
-      bottom: 86px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      list-style: none;
-      padding: 10px 16px;
-      margin: 0;
-      width: 100%;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
-    }
   }
-
- body.lock-scroll {
-    overflow: hidden;
-  }
-
 }
-
-@media (max-width: 2000px) and  (min-width: 1699px) {}
-
-@media (max-width: 1700px) and  (min-width: 1500px) {}
-
-@media  (max-width: 1499px) and  (min-width: 1200px) {}
-
 

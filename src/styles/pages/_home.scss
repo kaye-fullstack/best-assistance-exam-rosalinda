@@ -643,6 +643,8 @@
     }
 
     .section-reading {
+      margin-bottom: 74px;
+
       .healthy-content {
         padding: 0 22px;
         margin-bottom: 0;
@@ -712,30 +714,35 @@
       }
 
       .btn-journal {
-        margin: 28px 7px 4px;
+        margin: 28px 11px 4px;
       }
     }
 
     .section-information-system {
-      margin-bottom: 10%;
+      margin-bottom: 10.1%;
+      background-position: unset;
+
+      .content {
+        padding: 9px;
+      }
 
       .img-top-info {
         display: none;
       }
 
       .img-fluid {
-        margin-top: 14%;
+        margin-top: 25%;
         margin-left: 6%;
       }
 
       .content-info {
-        padding-top: 11%;
+        padding-top: 11.7%;
         padding-right: 8%;
         margin-bottom: -4%;
       }
 
       .desc-designed {
-        padding: 22px 53px 30px 13px;
+        padding: 19px 53px 30px 13px;
       }
 
       .img-bottom-info {
@@ -2050,398 +2057,32 @@
     }
   }
 
-  @media  (min-width:334px) and (max-width: 425px) {
+
+  @media  (min-width:334px) and (max-width: 399px) {
     .section-mission {
       .box-title {
-        padding-left: 32px;
-        padding-top: 14px;
+        padding-left: 15px;
+        padding-top: 9px;
       }
 
       .icon-members,
       .icon-guarantors,
       .icon-healthcare,
       .icon-employers {
-        margin-left: 6px;
-      }
-    }
-
-    .section-information-system {
-      .item-list {
-        padding-right: 5px;
-      }
-    }
-  }
-
-  @media only screen and  (max-width: 320px) {}
-  
-  @media (max-width: 575px) and  (min-width: 400px) {
-    .side-floating {
-      display: none;
-    }
-
-    .section-banner {
-      width: 100%;
-      height: auto;
-      padding: 0;
-
-      .banner-content {
-        top: 144px;
-        padding-bottom: 11px;
-        margin: 0;
-      }
-
-      .banner-title {
-        font-size: 26px;
-        padding-left: 0;
-        padding-top: 78px;
-      }
-      
-      .banner-icons {
-        padding: 15px 3px 12px;
-      }
-
-      .icon-holder-mission {
-        padding-right: 45px;
-      }
-
-      .icon-holder-feedback {
-        padding-right: 44px;
-      }
-
-      .icon-holder-contact {
-        padding-right: 0;
-      }
-
-      .desc {
-        display: block;
-        font-size: 15px;
-        word-spacing: 3px;
-        font-family: $font-opensans-regular;
-        color: $white;
-        padding-top: 6px;
-        margin: 0;
-      }
-
-      .swiper-pagination-bullet {
-        margin: 0 3px;
-        left: 1px;
-        top: -13px;
-        width: 5px;
-        height: 5px;
-      }
-
-      .swiper-container {
-        padding-bottom: 0;
-      }
-
-      .icon-names {
-        padding-bottom: 46.8%;
-      }
-
-      .desc-mission {
-        font-size: 13px;
-        margin-left: 7px;
-        margin-top: -14px;
-      }
-
-      .desc-feedback {
-        font-size: 13px;
-        margin-top: -13px;
-      }
-
-      .desc-contact {
-        margin-left: -25px;
-        font-size: 13px;
-        margin-top: -11px;
-      }
-    }
-
-    .section-mission {
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin-bottom: 1px;
-        
-      .content-mission {
-        padding: 37px 9px 53px 6px;
-      }
-
-      .img-fluid {
-        display: none;
-      }
-
-      .section-heading {
-        font-size: 20px;
-        padding-bottom: 15px;
-      }
-
-      .content {
-        padding: 0;
-        float: none;
-      }
-
-      .item{
-        font-size: 14px;
-        margin-left: -6px;
-      }
-
-      .icon-holder {
-        width: 22px;
-        margin-top: -3px;
-      }
-
-      .unstyled-items {
-        margin: 0;
-      }
-
-      .btn-assist {
-        top: 4px;
-        right: 3px;
-        font-size: 12px;
-        margin-top: 0;
-        padding: 13px 14px;
-        margin-left: 8px;
-      }
-
-      .btn-history {
-        right: 0;
-        font-size: 12px;
-        margin-top: 0;
-        padding: 13px 38px;
-      }
-
-      .box-content{
-        margin: 0;
-        padding: 0;
-      }
-
-      .box-img {
-        width: 100%;
-        height: 456px;
-        margin-top: -15px;
-      }
-        
-      .box-solutions {
-        top: 12px;
-        right: 25px;
-      }
-
-      .box-title {
-        font-size: 20px;
-        text-align: left;
-        padding-left: 14px;
-        padding-top: 9px;
-        margin-bottom: 29px;
-      }
-
-      .content-solution {
-        margin-left: 25px;
-      }
-
-      .icon-members {
-        width: 35px;
-        margin-left: -10px;
-        margin-top: 3px;
-      }
-
-      .icon-employers {
-        width: 35px;
         margin-left: -9px;
-        margin-top: 2px;
-      }
-
-      .icon-healthcare {
-        width: 39px;
-        margin-left: -13px;
-        margin-top: 4px;
-      }
-
-      .icon-guarantors {
-        width: 35px;
-        margin-left: -12px;
-        margin-top: 4px;
-      }
-
-      .box-desc {
-        padding-left: 50px;
-        margin-top: -38px;
-        padding-right: 10px;
-        padding-bottom: 6px;
-      }
-
-      .title-solution {
-        font-size: 14px;
-      }
-
-      .desc-solution {
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
-    }
-
-    .section-reading {
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin-bottom: 3px;
-
-      .healthy-content {
-        padding: 0 32px 0 14px;
-        margin-bottom: 32px;
-        margin-top: -3px;
-      }
-
-      .section-heading {
-        font-size: 20px;
-        margin-bottom: 2px;
-        padding-top:26px;
-      }
-
-      .section-subheading {
-        font-size: 12px;
-        padding-bottom: 1px;
-        padding-top: 3px;
-      }
-
-      .btn-filter {
-        display: none;
-      }
-
-      .swiper-container {
-        height: auto;
-        width: 100%;
-        margin-top: 7px;
-        margin-left: -6px;
-      }
-
-      .reading-content {
-        top: 50%;
-        padding-left: 3px;
-        padding-bottom: 0;
-      }
-
-      .title-news {
-        font-size: 17px;
-        padding: 6px 97px 0 0;
-        margin-left: 11px;
-      }
-
-      .date {
-        font-size: 10px;
-        margin: 0 15px -3px;
-      }
-
-      .category-news,
-      .category-health,
-      .category-success,
-      .category-case {
-        font-size: 11px;
-        margin-left: 11px;
-        padding: 1px 6px;
-      }
-
-      .title-health {
-        font-size: 14px;
-        padding-top: 1px;
-        padding-right: 0;
-        margin-bottom: 1px;
-        margin-left: 13px;
-      }
-      
-      .title-success {
-        font-size: 14px;
-        padding-top: 1px;
-        padding-right: 0;
-        margin-left: 13px;
-        margin-bottom: 17px;
-      }
-
-
-      .title-case {
-        font-size: 14px;
-        padding-top: 0;
-        padding-right: 0;
-        margin-left: 13px;
-        margin-bottom: 18px;
-      }
-        
-      .swiper-slide:first-child {
-        background-image: url('../assets/images/16.5.fw.png');
-        background-size: cover;
-        width: 99%;
-        height: auto;
-      }
-
-      .swiper-slide:nth-child(2) {
-        background-image: url('../assets/images/17.5.fw.png');
-        background-size: cover;
-        width: 49%;
-        height: auto;
-      }
-
-      .swiper-slide:nth-child(3)  {
-        background-image: url('../assets/images/18.5.fw.png');
-        width: 49.2%;
-        height: auto;
-        background-size: cover;
-      }
-
-      .swiper-slide:last-child  {
-        background-image: url('../assets/images/19.5.fw.png');
-        width: 49.2%;
-        height: 197px;
-        background-size: cover;
-      }
-
-      .btn-journal {
-        right: 6px;
-        bottom: 15px;
-        font-size: 12px;
-        padding: 13px 43px;
-        margin-top: -6px;
-        margin-bottom: 27px;
       }
     }
 
     .section-information-system {
-      background-image: none;
-      margin-bottom: 0;
-      background-color: $very-light-gray;
-
-      .title-platform {
-        position: absolute;
-        top: 42px;
-        font-size: 20px;
-        padding-left: 0;
-      }
-
-      .img-top-info {
-        position: relative;
-        top: -31px;
-        left: -5px;
-        display: block;
-        width: 77px;
-        margin-top: 0; 
-      }
-        
-      .img-fluid img {
-        position: relative;
-        bottom: 165px;
-        right: 23px;
-        width: 105%; 
+     .content-info {
+        padding-top: 0;
+        padding-right: 8px;
+        position: static;
+        height: 185px;
       }
       
       .text-blue {
-        font-size: 21px;
-        bottom: 4px;
-      }
-
-      .content-info {
-        padding-top: 0;
-        padding-right: 8px;
-        
-        position: static;
-        height: 211px;
+        bottom: -2px;
       }
 
       .desc-designed {
@@ -2476,437 +2117,248 @@
         position: relative;
         top: -6px;
         right: 4px;
-        width: 12%;
+        width: 10%;
       }
-
-      .btn-solution {
-        display: none;
-      }
-
-      .img-bottom-info {
-        display: none;
-      }
-    }}
+    }
+  } 
   
-  @media (max-width: 399px) and  (min-width: 321px) {
+  @media  (min-width:1200px) and (max-width: 1699px){
     .side-floating {
-      display: none;
+      right: 0;
     }
 
     .section-banner {
       width: 100%;
       height: auto;
-      padding: 0;
-
-      .banner-content {
-        top: 144px;
-        padding-bottom: 11px;
-        margin: 0;
-      }
-
-      .banner-title {
-        font-size: 26px;
-        padding-left: 0;
-        padding-top: 78px;
-      }
-      
-      .banner-icons {
-        padding: 15px 3px 12px;
-      }
-
-      .icon-holder-mission {
-        padding-right: 45px;
-      }
-
-      .icon-holder-feedback {
-        padding-right: 44px;
-      }
-
-      .icon-holder-contact {
-        padding-right: 0;
-      }
-
-      .desc {
-        display: block;
-        font-size: 15px;
-        word-spacing: 3px;
-        font-family: $font-opensans-regular;
-        color: $white;
-        padding-top: 6px;
-        margin: 0;
-      }
-
-      .swiper-pagination-bullet {
-        margin: 0 3px;
-        left: 1px;
-        top: -13px;
-        width: 5px;
-        height: 5px;
-      }
+      background-position: 59%;
 
       .swiper-container {
-        padding-bottom: 0;
-      }
+        padding: 0;
+    
+        .banner-title {
+          position: relative;
+          top: 200px;
+          font-size: 56px;
+          padding: 10px 0;
+        }
 
-      .icon-names {
-        padding-bottom: 46.8%;
-      }
+        .swiper-pagination-bullet {
+          top: 175px;
+        }
 
-      .desc-mission {
-        font-size: 13px;
-        margin-left: 7px;
-        margin-top: -14px;
-      }
-
-      .desc-feedback {
-        font-size: 13px;
-        margin-top: -13px;
-      }
-
-      .desc-contact {
-        margin-left: -25px;
-        font-size: 13px;
-        margin-top: -11px;
+        .banner-icons {
+          margin-top: 17%;
+        }
       }
     }
 
     .section-mission {
       width: 100%;
       height: auto;
-      padding: 0;
-      margin-bottom: 1px;
-        
+      padding-bottom: 20px;
+
       .content-mission {
-        padding: 37px 9px 53px 6px;
+        padding: 40px 15px;
       }
 
       .img-fluid {
-        display: none;
-      }
-
-      .section-heading {
-        font-size: 20px;
-        padding-bottom: 15px;
+        left: 3%;
+        width: 40%;
       }
 
       .content {
+        position: relative;
+        left: 4%;
+        padding: 5px 15px;
+
+        .section-heading {
+          font-size: 40px;
+          padding: 5px;
+        }
+
+        .item {
+          font-size: 18px;
+        }
+
+        .btn-assist {
+          font-size: 13px;
+          padding: 18px 15px;
+          margin: 0;
+        }
+
+        .btn-history {
+          font-size: 13px;
+          padding: 18px 42px;
+          margin: 0;
+        }
+      }
+
+      .box-content {
+        margin-top: -45%;
+        margin-left: 58.3%;
         padding: 0;
-        float: none;
-      }
 
-      .item{
-        font-size: 14px;
-        margin-left: -6px;
-      }
+        .box-img {
+          width: 100%;
+          height: 818px;
+        }
 
-      .icon-holder {
-        width: 22px;
-        margin-top: -3px;
-      }
+        .box-solutions {
+          top: 113px;
+          left: 62px;
+          right: 62px;
+        }
 
-      .unstyled-items {
-        margin: 0;
-      }
+        .box-title {
+          font-size: 40px;
+          text-align: left;
+        }
 
-      .btn-assist {
-        top: 4px;
-        right: 3px;
-        font-size: 12px;
-        margin-top: 0;
-        padding: 13px 14px;
-        margin-left: 8px;
-      }
+        .box-desc{
+          position: relative;
+          top: -50px;
+          left: 51px;
+          padding: 0 78px 0px 10px; 
+        }
 
-      .btn-history {
-        right: 0;
-        font-size: 12px;
-        margin-top: 0;
-        padding: 13px 38px;
-      }
+        .title-solution {
+          font-size: 18px;
+        }
 
-      .box-content{
-        margin: 0;
-        padding: 0;
-      }
+        .desc-solution {
+          font-size: 19px;
+        }
 
-      .box-img {
-        width: 100%;
-        height: 456px;
-        margin-top: -15px;
-      }
-        
-      .box-solutions {
-        top: 12px;
-        right: 25px;
-      }
-
-      .box-title {
-        font-size: 20px;
-        text-align: left;
-        padding-left: 14px;
-        padding-top: 9px;
-        margin-bottom: 29px;
-      }
-
-      .content-solution {
-        margin-left: 25px;
-      }
-
-      .icon-members {
-        width: 35px;
-        margin-left: -10px;
-        margin-top: 3px;
-      }
-
-      .icon-employers {
-        width: 35px;
-        margin-left: -9px;
-        margin-top: 2px;
-      }
-
-      .icon-healthcare {
-        width: 39px;
-        margin-left: -13px;
-        margin-top: 4px;
-      }
-
-      .icon-guarantors {
-        width: 35px;
-        margin-left: -12px;
-        margin-top: 4px;
-      }
-
-      .box-desc {
-        padding-left: 50px;
-        margin-top: -38px;
-        padding-right: 10px;
-        padding-bottom: 6px;
-      }
-
-      .title-solution {
-        font-size: 14px;
-      }
-
-      .desc-solution {
-        font-size: 14px;
-        margin-bottom: 10px;
+        .icon-members {
+          padding-right: 2px;
+          margin-top: 0px;
+        }
       }
     }
 
     .section-reading {
       width: 100%;
       height: auto;
-      padding: 0;
-      margin-bottom: 3px;
-
-      .healthy-content {
-        padding: 0 32px 0 14px;
-        margin-bottom: 32px;
-        margin-top: -3px;
-      }
+      padding-bottom: 20px;
 
       .section-heading {
-        font-size: 20px;
-        margin-bottom: 2px;
-        padding-top:26px;
+        padding-top: 25px;
       }
 
       .section-subheading {
-        font-size: 12px;
-        padding-bottom: 1px;
-        padding-top: 3px;
+        padding-bottom: 60px;
       }
 
       .btn-filter {
         display: none;
       }
 
-      .swiper-container {
-        height: auto;
-        width: 100%;
-        margin-top: 7px;
-        margin-left: -6px;
-      }
-
-      .reading-content {
-        top: 50%;
-        padding-left: 3px;
-        padding-bottom: 0;
-      }
-
-      .title-news {
-        font-size: 17px;
-        padding: 6px 97px 0 0;
-        margin-left: 11px;
-      }
-
-      .date {
-        font-size: 10px;
-        margin: 0 15px -3px;
-      }
-
-      .category-news,
-      .category-health,
-      .category-success,
-      .category-case {
-        font-size: 11px;
-        margin-left: 11px;
-        padding: 1px 6px;
-      }
-
-      .title-health {
-        font-size: 14px;
-        padding-top: 1px;
-        padding-right: 0;
-        margin-bottom: 1px;
-        margin-left: 13px;
-      }
-      
-      .title-success {
-        font-size: 14px;
-        padding-top: 1px;
-        padding-right: 0;
-        margin-left: 13px;
-        margin-bottom: 17px;
-      }
-
-
-      .title-case {
-        font-size: 14px;
-        padding-top: 0;
-        padding-right: 0;
-        margin-left: 13px;
-        margin-bottom: 18px;
-      }
-        
       .swiper-slide:first-child {
-        background-image: url('../assets/images/16.5.fw.png');
         background-size: cover;
-        width: 99%;
-        height: auto;
+        width: 60%;
       }
 
       .swiper-slide:nth-child(2) {
         background-image: url('../assets/images/17.5.fw.png');
         background-size: cover;
-        width: 49%;
-        height: auto;
+        width: 37%;
       }
 
       .swiper-slide:nth-child(3)  {
         background-image: url('../assets/images/18.5.fw.png');
-        width: 49.2%;
-        height: auto;
         background-size: cover;
+        width: 40%;
       }
 
       .swiper-slide:last-child  {
         background-image: url('../assets/images/19.5.fw.png');
-        width: 49.2%;
-        height: 197px;
         background-size: cover;
       }
 
+      .title-health,
+      .title-success,
+      .title-case {
+        padding-top: 2px;
+      }
+
+      .date {
+        margin: 14px 0 24px;
+      }
+
       .btn-journal {
-        right: 6px;
-        bottom: 15px;
-        font-size: 12px;
-        padding: 13px 43px;
-        margin-top: -6px;
-        margin-bottom: 27px;
+        margin-bottom: 20px;
       }
     }
 
     .section-information-system {
-      background-image: none;
-      margin-bottom: 0;
-      background-color: $very-light-gray;
+      width: 100%;
+      height: auto;
+      background-position: 11%;
+      margin-bottom: 17%;
 
-      .title-platform {
-        position: absolute;
-        top: 42px;
-        font-size: 20px;
-        padding-left: 0;
-      }
-
-      .img-top-info {
-        position: relative;
-        top: -31px;
-        left: -5px;
-        display: block;
-        width: 77px;
-        margin-top: 0; 
-      }
-        
-      .img-fluid img {
-        position: relative;
-        bottom: 165px;
-        right: 23px;
-        width: 105%; 
-      }
-      
-      .text-blue {
-        font-size: 21px;
-        bottom: 4px;
-      }
-
-      .content-info {
-        padding-top: 0;
-        padding-right: 8px;
-        
-        position: static;
-        height: 211px;
+      .img-fluid img{
+        width: 100%;
       }
 
       .desc-designed {
-        padding: 15px 14px 17px 0;
-        font-size: 14px;
-        line-height: 24px;
-        margin: 0;
+        padding: 5px 34px 8px 13px;
       }
 
-      .content {
-        position: relative;
-        bottom: 83%;
-        padding: 10px 0;
+      .unstyled-info {
+        padding: 0;
       }
 
       .item-list {
-        padding:3px 3px 3px 3px;
+        padding: 14px;
       }
 
       .item {
         display: flex;
-        margin: -38px 15px 17px 42px;
-        font-size: 14px;
-        font-family: $font-opensans-bold;
-      }
-
-      .unstyled-info {
-        padding: 12px 0 0;
+        font-size: 18px;
+        font-family: $font-opensans-semibold;
+        margin: -38px 15px 0 42px;
       }
 
       .icon-list {
         position: relative;
-        top: -6px;
-        right: 4px;
-        width: 12%;
+        bottom: 7px;
+        width: 31px;
+        padding: 0;
       }
 
       .btn-solution {
-        display: none;
+        left: 2px;
+        margin: 10px 5px;
+      }
+
+      .content-info {
+        height: 701px;
+        padding-top: 20%;
+        margin-bottom: 20%;
       }
 
       .img-bottom-info {
-        display: none;
+          left: 13px;
+          top: 8%;
       }
     }
   }
-  
-  @media (max-width: 2000px) and  (min-width: 1699px) {}
-  
-  @media (max-width: 1700px) and  (min-width: 1500px) {}
-  
-  @media  (max-width: 1499px) and  (min-width: 1200px) {}
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
