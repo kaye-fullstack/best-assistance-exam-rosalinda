@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   z-index: 10000;
-
   padding: 31px 0;
   width: 100%;
   height: auto;
@@ -12,10 +11,9 @@
   border-bottom: 1px solid $light-grayish;
 
   transition: all 0.4s;
-  
-  &.sticky {
+    
+   &.sticky {
     padding: 10px 0;
-
     background-color: $white;   
   }
 
@@ -26,7 +24,6 @@
   .brand-logo {
     position: relative;
     bottom: 9px;
-
     width: 100%;
   }
 
@@ -41,7 +38,8 @@
       display: flex;
       justify-content: space-between;
       padding: 14px 13px;
-
+      list-style: none;
+      text-decoration: none;
       font-family: $font-opensans-semibold;
       font-size: 15px;
       color: $light-gray;
@@ -54,17 +52,20 @@
      text-decoration:2px solid underline;
      text-underline-offset: 8px;
     }
+
+    .nav-link:hover {
+     color: #0076b1;
+     text-decoration:2px solid underline;
+     text-underline-offset: 8px;
+    }
   }
 
   .btn-num {
     position: relative;
     left: 25px;
-
     padding: 0 10px;
-
     background-color: $yellowish;
     border-radius: 25px;
-
     cursor: pointer;
 
     .num-desc {
@@ -79,30 +80,55 @@
   .btn-lang {
     position: relative;
     left: 18px;
+    border-radius: 25px;
     padding: 10px 7px 0;
+    background-color: $dark-blue;
+    cursor: pointer;
 
     .lang-select {
-      margin-top: -6px;
-      margin-right: 34px;
-
+      margin-right: 21px;
+      margin-top: -4px;
       font-size: 14px;
+      height: auto;
       color: $white;
-      
       background-color: $dark-blue;
       border-radius: 25px;
       border: none;
-
       appearance: none;
     }
 
     .arrow-select {
       position: absolute;
       bottom: 21px;
-      left: 56px;
+      left: 48px;
+    }
+  }
+
+    .nav-link:hover {
+      text-decoration: none;
+    }
+  }
+
+  .btn-lang {
+    position: relative;
+    left: 18px;
+    padding: 10px 7px 0;
+
+@media only screen and  (min-width:2000px) {
+  .section-header {
+    padding: 31px 0;
+
+    &.sticky {
+      padding: 10px 0;
+      background-color: $white;   
     }
 
-    select.form-control:not([size]):not([multiple]) {
-      height: calc(2.25rem + 9px);
+    .navbar {
+     padding: 0;
+    }
+
+    .brand-logo {
+      left: 13px;
     }
   }
 
@@ -122,7 +148,8 @@
     padding: 27px 10px;
     width: 100%;
     height: auto;
-
+    padding: 27px 10px;
+    
     &.sticky {
       padding: 12px 10px;
     }
@@ -133,7 +160,6 @@
 
     .navbar-brand {
       margin: 0;
-
       .brand-logo {
         width: 75%;
       }
@@ -141,25 +167,22 @@
 
     .navbar-nav {
       .nav-item {
-        margin-right: 6px;
+        margin-right: 3px;
       }
 
       .nav-link {
         padding: 14px 5px;
-        font-size: 12px;
+        font-size: 13px;
       }
     }
 
     .btn-num {
-      left: 16px;
-
+      left: 8px;
       padding: 6px 11px 8px;
   
       .nav-link {
-        display: unset;
         padding: 0;
-
-        font-size: 12px;
+        display: unset;
       }
 
       .icon-holder {
@@ -170,32 +193,16 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 12px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-right: 13px;
+        margin-top: -8px;
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
-      }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
+        bottom: 20px;
+        left: 68%;
       }
     }
 
@@ -235,6 +242,7 @@
     .collapse {
       position: fixed;
       top: 63px;
+      bottom: 0;
       right: -100%;
       bottom: 0;
       z-index: 2000;
@@ -273,7 +281,6 @@
         position: relative;
         bottom: 19px;
         right: 17px;
-        
         display: block;
         margin-bottom: 6px;
         width: 25px;
@@ -293,17 +300,16 @@
     .brand-logo {
       bottom: 31px;
       left: 14px;
-
-      width: 59%; 
+      width: 59%;
+      bottom: 31px;
     }
 
     .navbar-nav {
       .nav-link {
-        padding: 11px 13px;
-        margin-bottom: 10px;
-
-        font-family: $font-opensans-semibold;
         font-size: 13px;
+        font-family: $font-opensans-semibold;
+        margin-bottom: 10px;
+        padding: 11px 13px;
       }
     }
   
@@ -314,13 +320,12 @@
 
    #excluded-btn {
      .nav-link {
+      padding: 11px 19px 3px;
       display: block;
-      padding: 11px 19px 3px; 
      }
 
      .btn-num {
-      left: 30px;
-
+      left: 41px;
       display: block;
       padding: 0;
 
@@ -330,10 +335,9 @@
      }
 
      .btn-lang {
+       display: block;
        bottom: 43px;
        left: 95%;
-
-       display: block;
        padding: 11px 3px 3px;
 
        .lang-select {
@@ -341,31 +345,26 @@
        }
 
        .arrow-select {
-        left: 56px;
+        bottom: 18px;
+        left: 46px;
        }
-
-       select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 6px);
-      }
      }
    }
 
     .unstyled-social-items {
       position: absolute;
-      right: 0;
       bottom: 63px;
-  
+      right: 0;
       display: flex;
       justify-content: space-between;
-      padding: 10px 15px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
       
       list-style: none;
-
       background-color: $white;
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
     }
   }
 
@@ -438,9 +437,9 @@
       position: relative;
       bottom: 4px;
       left: 11px;
-
       display: block;
       margin-bottom: 6px;
+      height: 2px;
       width: 25px;
       height: 2px;
     
@@ -463,11 +462,10 @@
 
     .navbar-nav {
       .nav-link {
-        padding: 11px 13px;
-        margin-bottom: 10px;
-
+        font-size: 13px;
         font-family: $font-opensans-semibold;
-        font-size: 13px;  
+        margin-bottom: 10px;
+        padding: 11px 13px;
       }
     }
 
@@ -478,24 +476,22 @@
 
     .btn-num {
       left: 8px;
-
-      padding: 7px 68px 8px;
       margin-right: 52%;
       margin-bottom: 20px;
-    
+      padding: 7px 68px 8px;
+  
       .nav-link {
-        display: unset;
         padding: 0;
+        display: unset;
       }
     }
 
     .btn-lang {
       bottom: 64px;
       left: 51%;
-
+      margin-right: 52%;
       padding-top: 7px;
       padding-bottom: 3px;
-      margin-right: 52%;
 
       .arrow-select {
         bottom: 18px;
@@ -507,18 +503,15 @@
       position: absolute;
       bottom: 63px;
       right: 0;
-
       display: flex;
       justify-content: space-between;
-      padding: 10px 15px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
-
-      background-color: $white;
       list-style: none;
-
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
+      background-color: $white;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
     }
   }
 
@@ -587,9 +580,9 @@
       position: relative;
       left: 5px;
       top: 6px;
-
       display: block;
       margin-bottom: 6px;
+      height: 2px;
       width: 25px;
       height: 2px;
      
@@ -609,15 +602,16 @@
       margin-top: 5px;
       margin-left: -10px;
       width: 63%;
+      margin-top: 5px;
+      margin-left: -10px;
     }
     
     .navbar-nav {
       .nav-link {
-        padding: 11px 13px;
-        margin-bottom: 10px;
-        
+        font-size: 13px;
         font-family: $font-opensans-semibold;
-        font-size: 13px;  
+        margin-bottom: 10px;
+        padding: 11px 13px;
       }
     }
     
@@ -630,22 +624,17 @@
 
     .btn-num {
       left: 8px;
-
-      padding-top: 5px;
       margin-bottom: 20px;
-      height: 44px;
-
-      text-align: center;
-      
+      padding: 6px 16px 8px;
+  
       .nav-link {
+        padding: 0;
         display: unset;
-        padding: 0; 
       }
     }
 
     .btn-lang {
       left: 8px;
-
       padding-top: 7px;
       padding-bottom: 3px;
 
@@ -663,51 +652,54 @@
       position: absolute;
       bottom: 63px;
       right: 0;
-
       display: flex;
       justify-content: space-between;
-      padding: 10px 15px;
       margin: 0;
+      padding: 10px 15px;
       width: 100%;
-
-      background-color: $white;
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
       list-style: none;
+      background-color: $white;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
     }
   }
 
  .lock-scroll {
     overflow: hidden;
   }
+
 }
 
-@media only screen and  (min-width:2000px) {
+
+@media (max-width: 399px) and  (min-width: 321px) {
   .section-header {
-    padding: 31px 0;
-
-    &.sticky {
-      padding: 10px 0;
-
-      background-color: $white;   
-    }
-
-    .navbar {
-     padding: 0;
-    }
-
-    .brand-logo {
-      left: 13px;
+    .unstyled-social-items {
+      position: absolute;
+      bottom: 63px;
+      right: 0;
+      justify-content: space-between;
+      display: flex;
+      margin: 0;
+      padding: 10px 15px;
+      width: 100%;
+      list-style: none;
+      border-top: 1px solid #ededee;
+      border-bottom: 1px solid #ededee;
     }
   }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
+
 }
 
-@media (max-width: 1699px) and  (min-width: 1200px) {
+@media (max-width: 1699px) and  (min-width: 1200px)  {
   .section-header {
-    padding: 27px 10px;
     width: 100%;
     height: auto;
-  
+    padding: 27px 10px;
+    
     &.sticky {
       padding: 12px 10px;
     }
@@ -718,7 +710,6 @@
 
     .navbar-brand {
       margin: 0;
-
       .brand-logo {
         width: 75%;
       }
@@ -731,19 +722,17 @@
 
       .nav-link {
         padding: 14px 5px;
-
         font-size: 13px;
       }
     }
 
     .btn-num {
-      left: 15px;
-
+      left: 8px;
       padding: 6px 11px 8px;
   
-      .nav-link { 
-        display: unset;
+      .nav-link {
         padding: 0;
+        display: unset;
       }
 
       .icon-holder {
@@ -754,57 +743,17 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 14px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-right: 13px;
+        margin-top: -8px;
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
+        bottom: 20px;
+        left: 68%;
       }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
-      }
-    }
-  }
-
-  .lock-scroll {
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 399px) and  (min-width: 321px) {
-  .section-header {
-    .unstyled-social-items {
-      position: absolute;
-      bottom: 63px;
-      right: 0;
-
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 15px;
-      margin: 0;
-      width: 100%;
-      
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
-      list-style: none;
     }
   }
 
@@ -813,4 +762,4 @@
   }
 
 }
-
+}

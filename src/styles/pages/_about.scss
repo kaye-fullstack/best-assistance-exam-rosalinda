@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
@@ -37,18 +38,54 @@
 
     .list-divider {
       border-top: 1px solid $very-light-gray;
+=======
+.about {
+  transition: all .2s ease-in-out;
+
+  .side-floating {
+    position: fixed;
+    top: 36.5%;
+    right: 0;
+    z-index: 2;
+    width: 56px;
+    height: 258px;
+    text-align: center;
+    background-color: #f3f6fb;
+
+    .side-floating-item {
+      padding: 10px 0 10px;
+      box-shadow: 0 0 25px 5px rgba(0, 0, 0, .2);
+   
+      .side-floating-icon {
+        list-style: none;
+        display: block;
+        text-decoration: none;
+        padding: 8px 8px 14px 8px;
+        cursor: pointer;
+      }
+
+      .list-divider {
+        border-top: 1px solid gray;
+      }
+>>>>>>> d9ac403d (fixed about-page issue)
     }
   }
 
   .section-banner-about {
+<<<<<<< HEAD
     position: relative;
     padding-bottom: 571px;
     margin-top: 138px;
 
+=======
+    padding-bottom: 507px;
+    margin-top: 121px;
+>>>>>>> d9ac403d (fixed about-page issue)
     background-image: url('../assets/images/resized.jpg');
     background-position: center left 7px;
     background-size: cover;
 
+<<<<<<< HEAD
     .navs-wrapper {
       position: absolute;
       top: 516px;
@@ -130,20 +167,82 @@
         }
       }
     }
+=======
+    .unstyled-items {
+      position: absolute;
+      top: 444px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      padding: 8px 40px;
+      list-style: none;
+      
+      .nav-item {
+        color: white;
+        font-family: $font-opensans-semibold;
+      
+        .nav-link {
+          padding: 15px 40px;
+          font-size: 17px;
+        }
+
+        .nav-arrow {
+          position: relative;
+          background-color: #1974b1;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: unset;
+            right: -23px;
+            width: 0;
+            height: 0;
+            border-top: 26.5px solid transparent;
+            border-bottom: 26.5px solid transparent;
+            border-left: 24px solid #1974b1;
+            z-index: 99;
+          } 
+        }
+
+        .nav-why {
+          background-color: white;
+          color: black;
+          font-family: $font-opensans-regular;
+        }
+
+        .nav-vision,
+        .nav-history {
+          background-color: rgba(3, 3, 3, 0.7);
+        }
+      }
+    } 
+>>>>>>> d9ac403d (fixed about-page issue)
   }
 
   .breadcrumb-wrapper {
     position: relative;
+<<<<<<< HEAD
 
     width: 100%;
     margin: 0;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: $white;
+=======
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    background-color: white;
+>>>>>>> d9ac403d (fixed about-page issue)
    
     .breadcrumb {
       position: relative;
       bottom: 2px;
+<<<<<<< HEAD
 
       display: flex;
       justify-content: center;
@@ -159,10 +258,26 @@
         font-size: 13px;
         color: $dark-gray;
         text-decoration: none;
+=======
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3px;
+      margin: 0;
+      background-color: white;
+  
+
+      .breadcrumb-item:not(:last-child) {
+        padding: 10px 9px;
+        text-decoration: none;
+        font-family: $font-opensans-semibold;
+        color: #adabab;
+        font-size: 13px;
+>>>>>>> d9ac403d (fixed about-page issue)
       }
 
       .breadcrumb-item:last-child {
         padding: 10px 9px;
+<<<<<<< HEAD
         
         font-family: $font-opensans-semibold;
         font-size: 13px; 
@@ -177,21 +292,40 @@
         font-size: 13px;
         color: $dark-gray;
         text-decoration: none;
+=======
+        text-decoration: none;
+        font-family: $font-opensans-semibold;
+        color: $thin-blue;
+        font-size: 13px; 
+      }
+      
+      .breadcrumb-item > a {
+        text-decoration: none;
+        font-family: $font-opensans-semibold;
+        color: #adabab;
+        font-size: 13px;
+        padding: 10px 9px;
+>>>>>>> d9ac403d (fixed about-page issue)
       }
 
       .fa {
         display: flex;
         align-self: center;
+<<<<<<< HEAD
 
         margin-right: 2px;
 
         color: $dark-gray;
+=======
+        color: #adabab;
+>>>>>>> d9ac403d (fixed about-page issue)
         font-size: 13px;
       }
     }
   }
 
   .section-why-us {
+<<<<<<< HEAD
     margin-bottom: 6.7%;
     width: 100%;
     height: auto;
@@ -204,12 +338,24 @@
       height: auto;
 
       background-color: $white;
+=======
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    .section-text-img {
+      margin: 92px 0 99px;
+      width: 100%;
+      height: auto;
+      background-color: white;
+>>>>>>> d9ac403d (fixed about-page issue)
      
       &:first-child {
         background-image: url('../assets/images/information-system-img2.png');
         background-repeat: no-repeat;
         background-position: left -157px bottom 102px;
         object-fit: cover;
+<<<<<<< HEAD
 
         .image-holder {
           margin-right: -9px;
@@ -248,10 +394,16 @@
       }
 
       &:nth-child(3) {
+=======
+      }
+
+      &:nth-child(3){
+>>>>>>> d9ac403d (fixed about-page issue)
         background-image: url('../assets/images/information-system-img2.png');
         background-repeat: no-repeat;
         background-position: right -136px top;
         object-fit: cover;
+<<<<<<< HEAD
 
         .image-holder {
           margin-top: 45px;
@@ -288,19 +440,39 @@
           font-size: 17px;
           line-height: 26px;
         }
+=======
+>>>>>>> d9ac403d (fixed about-page issue)
       }
 
       .custom-container {
         max-width: 1050px;
       }
 
+<<<<<<< HEAD
       .content {
         display: block;
         padding: 11px 0 11px 8px;
+=======
+      .desc-content {
+        display: block;
+        padding: 20px 10px;
+      }
+
+      .heading {
+        margin:46px 0 15px;
+        font-size: 40px;
+        font-family: $font-opensans-bold;
+      }
+
+      .subheading {
+        font-size: 17px;
+        line-height: 26px;
+>>>>>>> d9ac403d (fixed about-page issue)
       }
 
       .img-fluid {
         border-radius: 50%;
+<<<<<<< HEAD
         border-right: 8px solid $orange;
         object-fit: cover;
       }
@@ -572,11 +744,261 @@
         height: 13px;
 
         outline: none;
+=======
+        border-right: 8px solid orange;
+      }
+
+      .img-holder {
+        margin-left: 86px;
+        margin-top: 38px;
+      }
+
+      .img-holder-values {
+        margin-left: 7px;
+        margin-bottom: 8px;
+      }
+
+      .img-holder-people {  
+        margin-left: 85px;
+        margin-top: -57px;
+
+        .img-fluid {
+          height: 25%;
+          border-radius: 50%;
+          border-right: 8px solid orange;
+          object-fit: cover;
+        }
+      }
+
+      .title {
+        font-family: $font-opensans-semibold;
+        font-size: 17px;
+      }
+
+      .title-desc {
+        font-size: 17px;
+        line-height: 26px;
+      }
+
+      .img-holder-data {
+        margin-left: 7px;
+        margin-bottom: 28px;
+        margin-top: -20px;
+      }
+    }
+  }
+  
+  @include respond-to (xs) { 
+    .side-floating {
+      display: none;
+    }
+
+    .section-banner-about {
+      padding-bottom: 159px;
+      margin-top: 76px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+     
+      .unstyled-items  {
+        top: 115px;
+        left: -1px;
+        padding: 8px 0;
+     
+        .nav-item {
+          .nav-link {
+            padding: 10px 10px;
+            font-size: 10px;
+          }
+
+          .nav-arrow {
+            &::before {
+              display: none;
+            }
+          }
+        }
       }
     }
 
     .breadcrumb-wrapper {
       top: 0;
+
+      .breadcrumb {
+        margin: 0;
+        padding: 5px 0;
+
+        .breadcrumb-item > a {
+          font-size: 10px;
+          padding: 7px 9px;
+        }
+
+        .breadcrumb-item:not(:last-child){
+          font-size: 10px;
+          padding: 7px 9px;
+        }
+
+        .breadcrumb-item:last-child {
+          font-size: 10px;
+          padding: 7px 9px;
+        }
+      }
+    }
+
+    .section-why-us {
+      .section-text-img {
+        margin: 40px 0 41px;
+
+        &:first-child,
+        &:nth-child(3) {
+          background-image: none;
+        }
+
+        .ordered {
+          display: flex;
+          order: -1;
+        }
+
+        .img-holder {
+          margin:  0;
+          margin-top: 50px;
+
+          .img-fluid {
+            width: 80%;
+          }
+        }
+
+        .content {
+          position: static;
+
+          .heading {
+            position: absolute;
+            top: 0;
+            font-size: 20px;
+            margin: 10px 0;
+          }
+  
+          .subheading {
+            font-size: 14px;
+          }
+
+          .desc-content {
+            padding: 20px 5px;
+          }
+        }
+      
+        .content-values {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -5%;
+          }
+
+          .title {
+            font-size: 14px;
+          }
+
+          .title-desc {
+            font-size: 14px;
+          }
+        }
+
+        .img-holder-values {
+          margin: 0;
+
+          .img-fluid {
+            width: 80%;
+          }
+        }
+
+        .content-people {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -56px;
+          }
+
+          .subheading {
+            font-size: 14px;
+          }
+        }
+
+        .img-holder-people {
+          margin: 0;
+          margin-top: -1px;
+
+          .img-fluid {
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        .content-data {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -56px;
+          }
+
+          .subheading {
+            font-size: 14px;
+          }
+        }
+
+        .img-holder-data {
+          margin: 0;
+          margin-top: -1px;
+
+          .img-fluid {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to (sm) {
+    .side-floating {
+      display: none;
+    }
+
+    .section-banner-about {
+      padding-bottom: 467px;
+      margin-top: 82px;
+      background-position: center left -77px;
+
+      .unstyled-items  {
+        padding: 8px 0;
+        left: 0;
+        top: 419px;
+      
+        .nav-item {
+          .nav-link {
+            padding: 10px 34px;
+            font-size: 13px;
+          }
+
+          .nav-arrow {
+            &::before {
+              display: none;
+            }
+          }
+        }
+>>>>>>> d9ac403d (fixed about-page issue)
+      }
+    }
+
+    .breadcrumb-wrapper {
+      top: 0;
+<<<<<<< HEAD
       margin-top: 59px;
 
       .breadcrumb {
@@ -598,12 +1020,34 @@
           padding: 0 9px;
 
           font-size: 12.8px;
+=======
+
+      .breadcrumb {
+        top: -2px;
+        margin: 0;
+        padding: 6px 0;
+      
+        .breadcrumb-item > a {
+          font-size: 10px;
+          padding: 7px 9px;
+        }
+
+        .breadcrumb-item:not(:last-child){
+          font-size: 10px;
+          padding: 7px 9px;
+        }
+
+        .breadcrumb-item:last-child {
+          font-size: 10px;
+          padding: 7px 9px;
+>>>>>>> d9ac403d (fixed about-page issue)
         }
       }
     }
 
     .section-why-us {
       .section-text-img {
+<<<<<<< HEAD
         margin: 20px 0 21px;
 
         &:first-child {
@@ -613,20 +1057,53 @@
             display: flex;
             order: -1;
           }
+=======
+        margin: 40px 0 41px;
+
+        &:first-child,
+        &:nth-child(3) {
+          background-image: none;
+        }
+
+        .ordered {
+          display: flex;
+          order: -1;
+        }
+
+        .img-holder {
+          margin:  0;
+          margin-top: 54px;
+
+          .img-fluid {
+            width: 63%;
+          }
+        }
+
+        .content {
+          position: static;
+>>>>>>> d9ac403d (fixed about-page issue)
 
           .heading {
             position: absolute;
             top: 0;
+<<<<<<< HEAD
 
             margin: 0;
 
             font-size: 20px;
           }
 
+=======
+            font-size: 20px;
+            margin: 10px 0;
+          }
+  
+>>>>>>> d9ac403d (fixed about-page issue)
           .subheading {
             font-size: 14px;
           }
 
+<<<<<<< HEAD
           .image-holder {
            margin-top: 45px;
            margin-right: 21%;
@@ -668,11 +1145,54 @@
             margin: 0;
 
             font-size: 20px;
+=======
+          .desc-content {
+            padding: 20px 5px;
+          }
+        }
+      
+        .content-values {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -7%;
+          }
+
+          .title {
+            font-size: 14px;
+          }
+
+          .title-desc {
+            font-size: 14px;
+          }
+        }
+
+        .img-holder-values {
+          margin: 0;
+
+          .img-fluid {
+          width: 50%;
+          }
+        }
+
+        .content-people {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -56px;
+>>>>>>> d9ac403d (fixed about-page issue)
           }
 
           .subheading {
             font-size: 14px;
           }
+<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -688,11 +1208,34 @@
             margin: 0;
 
             font-size: 20px;
+=======
+        }
+
+        .img-holder-people {
+          margin: 0;
+          margin-top: -1px;
+
+          .img-fluid {
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        .content-data {
+          position: static;
+
+          .heading {
+            position: absolute;
+            font-size: 20px;
+            margin: 10px 0;
+            top: -56px;
+>>>>>>> d9ac403d (fixed about-page issue)
           }
 
           .subheading {
             font-size: 14px;
           }
+<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -706,10 +1249,22 @@
 
         .content-position {
           position: static;
+=======
+        }
+
+        .img-holder-data {
+          margin: 0;
+          margin-top: -1px;
+
+          .img-fluid {
+            width: 50%;
+          }
+>>>>>>> d9ac403d (fixed about-page issue)
         }
       }
     }
   }
+<<<<<<< HEAD
 }
 
 @include respond-to (xs) { 
@@ -851,10 +1406,48 @@
 
         outline: none;
       }
+=======
+
+  @include respond-to (md) {
+    .section-banner-about {
+      margin-top: 85px;
+
+      .unstyled-items  {
+        top: 451px;
+        left: 0;
+        padding: 8px 40px;
+       
+        .nav-item {
+          .nav-link {
+            padding: 14px 40px;
+            font-size: 13px;
+          }
+  
+          .nav-arrow {
+            position: relative;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: unset;
+              right: -23px;
+              width: 0;
+              height: 0;
+              border-top: 22.5px solid transparent;
+              border-bottom: 22.5px solid;
+              border-left: 23px solid #1974b1;
+              z-index: 99;
+            } 
+          }
+        }
+      }
+>>>>>>> d9ac403d (fixed about-page issue)
     }
 
     .breadcrumb-wrapper {
       top: 0;
+<<<<<<< HEAD
       margin-top: 88px;
 
       .breadcrumb {
@@ -876,12 +1469,25 @@
           padding: 0 9px;
 
           font-size: 12.8px;
+=======
+   
+      .breadcrumb {
+        top: -2px;
+        margin: 0;
+        padding: 6px 0;
+      
+
+        .breadcrumb-item > a {
+          font-size: 13px;
+          padding: 7px 9px;
+>>>>>>> d9ac403d (fixed about-page issue)
         }
       }
     }
 
     .section-why-us {
       .section-text-img {
+<<<<<<< HEAD
         margin: 20px 0 21px;
 
         &:first-child {
@@ -899,11 +1505,21 @@
             margin: 0;
 
             font-size: 20px;
+=======
+        &:first-child {
+        background-position: left -154px bottom 14px;
+      }
+
+        .content {
+          .heading {
+            font-size: 24px;
+>>>>>>> d9ac403d (fixed about-page issue)
           }
 
           .subheading {
             font-size: 14px;
           }
+<<<<<<< HEAD
 
           .image-holder {
            margin-top: 45px;
@@ -945,11 +1561,38 @@
             margin: 0;
 
             font-size: 20px;
+=======
+        }
+        
+        .img-holder {
+          margin: 0;
+        }
+
+        .content-values {
+          .heading {
+            font-size: 24px;
+          }
+
+          .title,
+          .title-desc {
+            font-size: 14px;
+          }
+        }
+
+        .img-holder-values {
+          margin: 0;
+        }
+
+        .content-people {
+          .heading {
+            font-size: 24px;
+>>>>>>> d9ac403d (fixed about-page issue)
           }
 
           .subheading {
             font-size: 14px;
           }
+<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -964,11 +1607,23 @@
             margin: 0;
 
             font-size: 20px;
+=======
+        }
+
+        .img-holder-people {
+          margin: 0;
+        }
+
+        .content-data {
+          .heading {
+            font-size: 24px;
+>>>>>>> d9ac403d (fixed about-page issue)
           }
 
           .subheading {
             font-size: 14px;
           }
+<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -982,10 +1637,36 @@
 
         .content-position {
           position: static;
+=======
+        }
+
+        .img-holder-data {
+          margin: 0;
+        }
+      }  
+    }
+  }
+
+  @include respond-to (lg) {
+    .section-banner-about {
+      margin-top: 101px;
+      background-position: center left 41px;
+
+      .unstyled-items{
+        left: -1px;
+
+        .nav-item {
+          .nav-arrow {
+            &:before {
+              right: -15.9%;
+            }
+          }
+>>>>>>> d9ac403d (fixed about-page issue)
         }
       }
     }
   }
+<<<<<<< HEAD
 }
 
 @media  (min-width:1200px) and (max-width: 1699px) {
@@ -1008,3 +1689,26 @@
     }
   }
 }
+=======
+
+  @media  (min-width:1200px) and (max-width: 1699px){
+    .section-banner-about {
+      margin-top: 101px;
+      background-position: center left 41px;
+
+      .unstyled-items{
+        left: -1px;
+
+        .nav-item {
+          .nav-arrow {
+            &:before {
+              top: 1px;
+              right: -14.9%;
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+>>>>>>> d9ac403d (fixed about-page issue)
