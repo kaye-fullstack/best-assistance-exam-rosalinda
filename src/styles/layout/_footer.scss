@@ -5,56 +5,14 @@
 // -----------------------------------------------------------------------------
 
 .section-footer-top {
-  background-image: url('../assets/images/26.fw.png');
+  background-image: url('../assets/images/25.fw.png');
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 
-  .footer-app {
-    padding-top: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  .box-assistance-app {
-    padding-top: 108px;
-  }
-
-  .heading-app {
-    font-size: 40px;
-    font-family: $font-opensans-bold;
-    color: $white;
-    margin-bottom: 15px;
-  }
-
-  .desc-app {
-    font-size: 17px;
-    font-family: $font-opensans-regular;
-    color: $white;
-    margin-bottom: 15px;
-  }
-
-  .img-box-app {
-    padding: 22px 0;
-  }
-
-  .img-phone {
-    margin-top: -160px;
-    margin-left: 32px;
-  }
-
-  .img-google-play {
-    margin: 2px 0 0 15px;
-    cursor: pointer;
-  }
-
-  .img-app-store {
-    margin: 2px 0 0 2px;
-    cursor: pointer;
-  }
-
   .footer-box {
-    padding: 45px 40px 38px 14px;
+    padding: 45px 40px 38px 59px;
   }
 
   .footer-boxes {
@@ -67,8 +25,7 @@
   }
 
   .icon-holder-phone {
-    padding-left: 98px;
-    margin-top: -6px;
+    padding-left: 37px
   }
 
   .share-desc {
@@ -91,7 +48,7 @@
   }
 
   .box-center {
-    padding: 40px 40px  38px 41px;
+    padding: 40px 40px  38px 56px;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -119,7 +76,8 @@
     font-size: 36px;
     font-family: $font-opensans-bold;
     color: $white;
-    padding: 49px 0 23px 90px;
+    padding: 42px 0 23px;
+    padding-left: 31px;
     line-height: 28px;
     opacity: .8;
   }
@@ -130,7 +88,7 @@
     font-size: 16px;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
-    margin-left: 97px;
+    margin-left: 37px;
     opacity: 0.9;
   }
 
@@ -180,6 +138,39 @@
   }
 }
 
+@media only screen and (min-width:2000px) {
+  .section-footer-top {
+    .footer-boxes {
+      padding: 0px 68px 0 62px;
+    }
+
+    .footer-box {
+      padding: 45px 59px 38px 59px;
+    }
+
+    .box-center {
+      padding: 40px 96px 38px 99px;
+    }
+
+    .text-contact {
+      display: block;
+      font-size: 15px;
+      color: #fff;
+      padding: 6% 6% 0;
+    }
+
+    .contact-desc {
+      font-size: 35px;
+      padding: 0 0 0 28px;
+    }
+  }
+
+  .section-footer-bottom {
+    .icon-items {
+      padding: 14px 4px 14px 6px;
+    }
+  }
+}
 
 
 @include respond-to (lg) {
@@ -187,34 +178,21 @@
     width: 100%;
     height: auto;
 
-    .box-assistance-app {
-      padding: 27px 20px;
-    }
-
-    .img-phone {
-     width: 100%;
-     margin-top: -34%;
-     margin-left: 1%;
-    }
-
     .footer-box {
       padding: 34px 20px 50px 10px;
     }
 
+    .footer-boxes {
+      padding: 0 16px 6px 12px;
+    }
+
     .box-center {
-      padding: 34px 20px 50px 33px;
+      padding: 34px 10px 50px 17px;
     }
 
     .contact-desc {
-      font-size: 32px;
-      margin-bottom: 63px;
-      padding: 47px 0 23px 31px;
-      line-height: 23px;
-    }
-
-    .icon-holder-phone {
-      padding-left: 26px;
-      margin-top: 7px;
+      font-size: 33px;
+      margin-bottom: 41px;
     }
   }
 
@@ -232,46 +210,6 @@
   .section-footer-top {
     width: 100%;
     height: auto;
-
-    .box-assistance-app {
-      padding-top: 0;
-      padding-left: 6px;
-    }
-
-    .footer-app {
-      padding: 34px 13px 0;
-    }
-
-    .heading-app {
-      font-size: 25px;
-      margin-bottom: 1px;
-    }
-
-    .desc-app {
-      font-size: 14px;
-      margin-right: 29%;
-      line-height: 1.7;
-    }
-
-    .img-box-app {
-      padding: 7px 0 30px;
-    }
-
-    .img-app-store {
-      width: 32%;
-      margin: 1px 0 0 4px;
-    }
-    .img-google-play {
-      width: 32%;
-    }
-    
-    .img-phone {
-      width: 97%;
-      height: auto;
-      position: absolute;
-      right: 34px;
-      bottom: -1%;
-    }
 
     .footer-boxes {
       padding: 0;
@@ -317,8 +255,7 @@
     .icon-holder-phone {
       width: 14%;
       padding-left: 0;
-      margin-left: 44px;
-      margin-top: 1px;
+      margin-left: 46px;
     }
 
     .text-contact {
@@ -357,34 +294,6 @@
   .section-footer-top {
     width: 100%;
     height: auto;
-    
-    .box-assistance-app {
-     padding: 0 27px;
-    }
-
-    .heading-app {
-      font-size: 25px;
-    }
-
-    .desc-app {
-      font-size: 15px;
-    }
-
-    .img-phone {
-      display: none;
-    }
-
-    .img-box-app {
-      padding: 22px 0;
-    }
- 
-    .img-app-store {
-      width: 133px;
-    }
-
-    .img-google-play {
-      width: 133px;
-    }
 
     .footer-boxes {
       padding: 20px 0;
@@ -457,45 +366,8 @@
     width: 100%;
     height: auto;
 
-    .footer-app {
-      padding-top: 0;
-    }
-
-    .box-assistance-app  {
-      padding: 29px 14px 27px;
-    }
-
-    .heading-app {
-      font-size: 25px;
-      padding-top: 5px;
-      margin: 0;
-    }
-
-    .desc-app {
-      font-size: 15px;
-      line-height: 24px;
-    }
-
-    .img-box-app {
-      padding: 4px 0;
-    }
-
-    .img-app-store {
-      width: 46%;
-      margin: 3px 0 0 2px;
-    }
-
-    .img-google-play {
-      width: 46%;
-      margin: 3px 0 0 11px;
-    }
-
-    .img-phone {
-      display: none;
-    }
-
     .footer-boxes {
-     padding: 0 10px 11px;
+     padding: 0 22px 11px;
     }
 
     .footer-box {
@@ -508,14 +380,14 @@
     }
 
     .share-desc {
-      font-size: 14px;
-      padding: 15px 10px 0 7px;
-      line-height: 25px;
+      padding-top: 15px;
+      padding-bottom: 2px;
+      line-height: 26px;
     }
 
     .share-link {
       font-size: 12px;
-      padding-left: 6px;
+      padding-left: 9px;
     }
 
     .box-center {
@@ -528,8 +400,8 @@
     }
 
     .feedback-desc {
-      font-size: 14px;
-      padding: 22px 10px 0 7px;
+      padding-top: 15px;
+      padding-bottom: 2px;
       line-height: 24px;
     }
 
@@ -554,7 +426,7 @@
       display: block;
       color: white;
       font-size: 14px;
-      padding: 15px 4px 2px;
+      padding: 11px 0 2px;
       margin-bottom: 0;
     }
 
@@ -577,59 +449,3 @@
     display: none;
   }
 }
-
-@media only screen and  (min-width:2000px)  {
-  .section-footer-top {
-    .box-assistance-app {
-      padding-left: 25px;
-    }
-
-    .img-phone {
-      margin-top: -22%;
-      margin-left: 9%;
-    }
-
-    .footer-boxes {
-      padding: 0px 68px 0 62px;
-    }
-
-    .footer-box {
-      padding: 45px 59px 38px 22px;
-    }
-
-    .box-center {
-      padding: 40px 96px 38px 99px;
-    }
-
-    .text-contact {
-      display: block;
-      font-size: 15px;
-      color: #fff;
-      padding: 7% 16% 0;
-    }
-
-    .share-desc {
-      padding: 34px 80px 15px 7px;
-    }
-
-    .contact-desc {
-      font-size: 34px;
-      padding: 0 0 0 80px
-    }
-
-    .icon-holder-phone {
-      padding-left: 80px;
-    }
-
-    .contact-link {
-      margin-left: 82px;
-    }
-  }
-
-  .section-footer-bottom {
-    .icon-items {
-      padding: 14px 4px 14px 6px;
-    }
-  }
-}
-

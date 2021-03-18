@@ -1,9 +1,3 @@
-//main: ../main.scss
-
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
 .section-header {
   position: fixed;
   top: 0;
@@ -16,7 +10,7 @@
   border-bottom: 1px solid #dfe0e2;
   transition: all 0.4s;
     
-  &.sticky {
+   &.sticky {
     padding: 10px 0;
     background-color: $white;   
   }
@@ -560,7 +554,6 @@
 
     .btn-num {
       left: 8px;
-      margin-right: 49%;
       margin-bottom: 20px;
       padding: 6px 16px 8px;
   
@@ -572,13 +565,12 @@
 
     .btn-lang {
       left: 8px;
-      margin-right: 49%;
       padding-top: 7px;
       padding-bottom: 3px;
 
       .arrow-select {
         bottom: 18px;
-        left: 78%;
+        left: 88%;
       }
     }
 
@@ -626,6 +618,11 @@
       border-bottom: 1px solid #ededee;
     }
   }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
+
 }
 
 @media (max-width: 1699px) and  (min-width: 1200px)  {
@@ -690,5 +687,9 @@
       }
     }
   }
-}
 
+  .lock-scroll {
+    overflow: hidden;
+  }
+
+}
