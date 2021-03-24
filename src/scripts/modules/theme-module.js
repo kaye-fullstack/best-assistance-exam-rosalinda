@@ -6,48 +6,23 @@ AppName.Modules.ThemeModule = (function () {
   // Private Methods //
   ////////////////////
   const _privateMethod = () => {
-    // private stuff
+    var _swiperReading = new Swiper('.swiper-reading', {
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      slidesPerView: 'auto',
+    });
 
-    const swiper_banner = new Swiper('.swiper-banner', {
-     autoplay: {
+     const _swiperBanner = new Swiper('.swiper-banner', {
+      autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
-      pagination: {
-        el: '.swiper-pagination-banner',
-      },
-    });
-  };
-
-  
-    var swiper_reading = new Swiper('.swiper-reading', {
-      slidesPerView: 0,
-      spaceBetween: 0,
-      pagination: {
-        el: '.swiper-pagination-reading',
-        clickable: true,
-      },
-      breakpoints:{
-        575:{
-          slidesPerView: 0,
-          spaceBetween: 0,
+       pagination: {
+         el: '.swiper-pagination-banner',
         },
-
-      767:{
-        slidesPerView: 0,
-        spaceBetween: 0,
-      },
-      991:{
-        slidesPerView: 0,
-        spaceBetween: 0,
-      },
-      1199:{
-        slidesPerView: 0,
-        spaceBetween: 0,
-      }
-    },
-    });
-
+      });
+    };
+  
     function lockScroll() {
       if ($('body').hasClass('lock-scroll')) {
           $('body').removeClass('lock-scroll');
@@ -78,10 +53,18 @@ AppName.Modules.ThemeModule = (function () {
             }
       });
     }
-    
+   
     window.onload = initHeader;
 
- 
+    // private stuff
+    var _footerUp = $('.back-to-top');
+    _footerUp.on('click', function(e){
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, 800);
+      });
+    
+    
+   
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -93,6 +76,6 @@ AppName.Modules.ThemeModule = (function () {
     init: init,
   };
 })();
+  
 
 
- 

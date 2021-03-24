@@ -3,15 +3,19 @@
   top: 0;
   left: 0;
   z-index: 10000;
+
   padding: 31px 0;
   width: 100%;
   height: auto;
+ 
   background: transparent;
-  border-bottom: 1px solid #dfe0e2;
+  border-bottom: 1px solid $light-grayish;
+
   transition: all 0.4s;
-    
-   &.sticky {
+  
+  &.sticky {
     padding: 10px 0;
+
     background-color: $white;   
   }
 
@@ -22,6 +26,7 @@
   .brand-logo {
     position: relative;
     bottom: 9px;
+
     width: 100%;
   }
 
@@ -36,15 +41,16 @@
       display: flex;
       justify-content: space-between;
       padding: 14px 13px;
-      list-style: none;
-      text-decoration: none;
+
       font-family: $font-opensans-semibold;
       font-size: 15px;
-      color: $dark-gray;
+      color: $light-gray;
+      text-decoration: none;
+      list-style: none;
     }
 
     .nav-link:hover {
-     color: #0076b1;
+     color: $dark-blue;
      text-decoration:2px solid underline;
      text-underline-offset: 8px;
     }
@@ -53,9 +59,12 @@
   .btn-num {
     position: relative;
     left: 25px;
+
     padding: 0 10px;
+
     background-color: $yellowish;
     border-radius: 25px;
+
     cursor: pointer;
 
     .num-desc {
@@ -70,20 +79,25 @@
   .btn-lang {
     position: relative;
     left: 18px;
-    border-radius: 25px;
     padding: 10px 7px 0;
+    
     background-color: $dark-blue;
+    border-radius: 25px;
+
     cursor: pointer;
 
     .lang-select {
-      margin-right: 21px;
       margin-top: -4px;
-      font-size: 14px;
+      margin-right: 21px;
       height: auto;
+    
+      font-size: 14px;
       color: $white;
+      
       background-color: $dark-blue;
       border-radius: 25px;
       border: none;
+
       appearance: none;
     }
 
@@ -95,41 +109,22 @@
   }
 
   .link-num {
-    text-decoration: none;
     color: $white;
+    text-decoration: none;  
   }
 
-  .link{
-    text-decoration: none;
+  .link {
     color: $white;
-  }
-}
-
-@media only screen and  (min-width:2000px) {
-  .section-header {
-    padding: 31px 0;
-
-    &.sticky {
-      padding: 10px 0;
-      background-color: $white;   
-    }
-
-    .navbar {
-     padding: 0;
-    }
-
-    .brand-logo {
-      left: 13px;
-    }
+    text-decoration: none; 
   }
 }
 
 @include respond-to (lg) { 
   .section-header {
+    padding: 27px 10px;
     width: 100%;
     height: auto;
-    padding: 27px 10px;
-    
+
     &.sticky {
       padding: 12px 10px;
     }
@@ -140,6 +135,7 @@
 
     .navbar-brand {
       margin: 0;
+
       .brand-logo {
         width: 75%;
       }
@@ -158,11 +154,12 @@
 
     .btn-num {
       left: 8px;
+
       padding: 6px 11px 8px;
   
       .nav-link {
-        padding: 0;
         display: unset;
+        padding: 0;
       }
 
       .icon-holder {
@@ -176,8 +173,8 @@
       left: 8px;
 
       .lang-select {
-        margin-right: 13px;
         margin-top: -8px;
+        margin-right: 13px;
       }
 
       .arrow-select {
@@ -193,6 +190,7 @@
     padding: 17px 0;
     width: 100%;
     height: auto;
+
     border-bottom: none;
    
     &.sticky {
@@ -207,30 +205,36 @@
     .collapse {
       position: fixed;
       top: 63px;
-      bottom: 0;
       right: -100%;
+      bottom: 0;
       z-index: 2000;
+
       display: block;
       padding: 0 12px;
       width: 0;
       height: 100% !important;
+
       background-color: $white;
+
       transition: all .3s ease;
     }
 
     .collapsing {
-      transition: all .3s ease-in;
       position: fixed;
       top: 63px;
       bottom: 0;
-      right: -100%; 
+      right: -100%;
+
+      display: block;
       width: 100%; 
       height: 100% !important;
-      display: block;
+     
+      transition: all .3s ease-in;
     }
     
     .collapse.show {
       right: 0;
+
       width: 100%;
     }
     
@@ -239,13 +243,16 @@
         position: relative;
         bottom: 19px;
         right: 17px;
+        
         display: block;
-        height: 2px;
-        width: 25px;
-        background: $thin-blue;
-        transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-        box-shadow: none; 
         margin-bottom: 6px;
+        width: 25px;
+        height: 2px;
+
+        background: $blue;
+        box-shadow: none; 
+
+        transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
       }
     }
  
@@ -254,17 +261,19 @@
     }
 
     .brand-logo {
-      left: 14px;
-      width: 59%;
       bottom: 31px;
+      left: 14px;
+
+      width: 59%; 
     }
 
     .navbar-nav {
       .nav-link {
-        font-size: 13px;
-        font-family: $font-opensans-semibold;
-        margin-bottom: 10px;
         padding: 11px 13px;
+        margin-bottom: 10px;
+
+        font-family: $font-opensans-semibold;
+        font-size: 13px;
       }
     }
   
@@ -275,12 +284,13 @@
 
    #excluded-btn {
      .nav-link {
-      padding: 11px 19px 3px;
       display: block;
+      padding: 11px 19px 3px; 
      }
 
      .btn-num {
       left: 41px;
+
       display: block;
       padding: 0;
 
@@ -290,9 +300,10 @@
      }
 
      .btn-lang {
-       display: block;
        bottom: 43px;
        left: 95%;
+
+       display: block;
        padding: 11px 3px 3px;
 
        .lang-select {
@@ -308,17 +319,20 @@
 
     .unstyled-social-items {
       position: absolute;
-      bottom: 63px;
       right: 0;
+      bottom: 63px;
+  
       display: flex;
       justify-content: space-between;
-      margin: 0;
       padding: 10px 15px;
+      margin: 0;
       width: 100%;
+      
       list-style: none;
+
       background-color: $white;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
+      border-top: 1px solid $light-grayish;
+      border-bottom: 1px solid $light-grayish;
     }
   }
 
@@ -329,9 +343,10 @@
 
 @include respond-to (sm){
   .section-header {
+    padding: 18px 15px;
     width: 100%;
     height: auto;
-    padding: 18px 15px;
+    
     border-bottom: none;
    
     &.sticky {
@@ -345,6 +360,7 @@
     .brand-logo {
       right: 15px;
       bottom: 8px;
+
       width: 68%;
     }
       
@@ -354,28 +370,34 @@
       bottom: 0;
       right: -100%;
       z-index: 2000;
+
       display: block;
       padding: 0 12px;
       margin: 0;
       width: 0;
       height: 100% !important;
+
       background-color: $white;
+
       transition: all .3s ease;
     }
 
     .collapsing {
-      transition: all .3s ease-in;
       position: fixed;
       top: 63px;
       bottom: 0;
-      right: -100%; 
+      right: -100%;
+
+      display: block;
       width: 100%; 
       height: 100% !important;
-      display: block;
+     
+      transition: all .3s ease-in;
     }
     
     .collapse.show {
       right: 0;
+
       width: 100%;
     }
 
@@ -383,13 +405,16 @@
       position: relative;
       bottom: 4px;
       left: 11px;
+
       display: block;
       margin-bottom: 6px;
-      height: 2px;
       width: 25px;
-      background: $thin-blue;
-      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+      height: 2px;
+    
+      background: $blue;
       box-shadow: none; 
+
+      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
     }
  
     .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
@@ -405,10 +430,11 @@
 
     .navbar-nav {
       .nav-link {
-        font-size: 13px;
-        font-family: $font-opensans-semibold;
-        margin-bottom: 10px;
         padding: 11px 13px;
+        margin-bottom: 10px;
+
+        font-family: $font-opensans-semibold;
+        font-size: 13px;  
       }
     }
 
@@ -419,22 +445,24 @@
 
     .btn-num {
       left: 8px;
+
+      padding: 7px 68px 8px;
       margin-right: 52%;
       margin-bottom: 20px;
-      padding: 7px 68px 8px;
-  
+    
       .nav-link {
-        padding: 0;
         display: unset;
+        padding: 0;
       }
     }
 
     .btn-lang {
       bottom: 64px;
       left: 51%;
-      margin-right: 52%;
+
       padding-top: 7px;
       padding-bottom: 3px;
+      margin-right: 52%;
 
       .arrow-select {
         bottom: 18px;
@@ -446,15 +474,18 @@
       position: absolute;
       bottom: 63px;
       right: 0;
+
       display: flex;
       justify-content: space-between;
-      margin: 0;
       padding: 10px 15px;
+      margin: 0;
       width: 100%;
-      list-style: none;
+
       background-color: $white;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
+      list-style: none;
+
+      border-top: 1px solid $light-grayish;
+      border-bottom: 1px solid $light-grayish;
     }
   }
 
@@ -468,6 +499,7 @@
     padding: 18px 0;
     width: 100%;
     height: auto;
+
     border-bottom: none;
     
     &.sticky {
@@ -488,27 +520,33 @@
       bottom: 0;
       right: -100%;
       z-index: 2000;
+
       display: block;
       padding: 0 12px;
       width: 0;
       height: 100% !important;
+
       background-color: $white;
+      
       transition: all .3s ease;
     }
 
     .collapsing {
-      transition: all .3s ease-in;
       position: fixed;
       top: 63px;
       bottom: 0;
       right: -100%; 
+
+      display: block;
       width: 100%; 
       height: 100% !important;
-      display: block;
+    
+      transition: all .3s ease-in;
     }
     
     .collapse.show {
       right: 0;
+
       width: 100%;
     }
       
@@ -516,13 +554,16 @@
       position: relative;
       left: 5px;
       top: 6px;
+
       display: block;
       margin-bottom: 6px;
-      height: 2px;
       width: 25px;
-      background: $thin-blue;
-      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+      height: 2px;
+     
+      background: $blue;
       box-shadow: none; 
+      
+      transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
     }
  
     .navbar-toggler[aria-expanded=true] .icon-bar:first-child {
@@ -531,17 +572,19 @@
 
     .brand-logo {
       z-index: 20;
-      width: 63%;
+
       margin-top: 5px;
       margin-left: -10px;
+      width: 63%;
     }
     
     .navbar-nav {
       .nav-link {
-        font-size: 13px;
-        font-family: $font-opensans-semibold;
-        margin-bottom: 10px;
         padding: 11px 13px;
+        margin-bottom: 10px;
+        
+        font-family: $font-opensans-semibold;
+        font-size: 13px;  
       }
     }
     
@@ -554,17 +597,22 @@
 
     .btn-num {
       left: 8px;
+
+      padding-top: 5px;
       margin-bottom: 20px;
-      padding: 6px 16px 8px;
-  
+      height: 44px;
+
+      text-align: center;
+      
       .nav-link {
-        padding: 0;
         display: unset;
+        padding: 0; 
       }
     }
 
     .btn-lang {
       left: 8px;
+
       padding-top: 7px;
       padding-bottom: 3px;
 
@@ -578,59 +626,55 @@
       margin-right: 67px;
     }
 
-
     .unstyled-social-items {
       position: absolute;
       bottom: 63px;
       right: 0;
+
       display: flex;
       justify-content: space-between;
-      margin: 0;
       padding: 10px 15px;
+      margin: 0;
       width: 100%;
-      list-style: none;
+
       background-color: $white;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
+      border-top: 1px solid $light-grayish;
+      border-bottom: 1px solid $light-grayish;
+      list-style: none;
     }
   }
 
  .lock-scroll {
     overflow: hidden;
   }
-
 }
 
-
-@media (max-width: 399px) and  (min-width: 321px) {
+@media only screen and  (min-width:2000px) {
   .section-header {
-    .unstyled-social-items {
-      position: absolute;
-      bottom: 63px;
-      right: 0;
-      justify-content: space-between;
-      display: flex;
-      margin: 0;
-      padding: 10px 15px;
-      width: 100%;
-      list-style: none;
-      border-top: 1px solid #ededee;
-      border-bottom: 1px solid #ededee;
+    padding: 31px 0;
+
+    &.sticky {
+      padding: 10px 0;
+
+      background-color: $white;   
+    }
+
+    .navbar {
+     padding: 0;
+    }
+
+    .brand-logo {
+      left: 13px;
     }
   }
-
-  .lock-scroll {
-    overflow: hidden;
-  }
-
 }
 
-@media (max-width: 1699px) and  (min-width: 1200px)  {
+@media (max-width: 1699px) and  (min-width: 1200px) {
   .section-header {
+    padding: 27px 10px;
     width: 100%;
     height: auto;
-    padding: 27px 10px;
-    
+  
     &.sticky {
       padding: 12px 10px;
     }
@@ -641,6 +685,7 @@
 
     .navbar-brand {
       margin: 0;
+
       .brand-logo {
         width: 75%;
       }
@@ -653,17 +698,19 @@
 
       .nav-link {
         padding: 14px 5px;
+
         font-size: 13px;
       }
     }
 
     .btn-num {
       left: 8px;
+
       padding: 6px 11px 8px;
   
-      .nav-link {
-        padding: 0;
+      .nav-link { 
         display: unset;
+        padding: 0;
       }
 
       .icon-holder {
@@ -677,8 +724,8 @@
       left: 8px;
 
       .lang-select {
-        margin-right: 13px;
         margin-top: -8px;
+        margin-right: 13px;  
       }
 
       .arrow-select {
@@ -691,5 +738,30 @@
   .lock-scroll {
     overflow: hidden;
   }
+}
+
+@media (max-width: 399px) and  (min-width: 321px) {
+  .section-header {
+    .unstyled-social-items {
+      position: absolute;
+      bottom: 63px;
+      right: 0;
+
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      margin: 0;
+      width: 100%;
+      
+      border-top: 1px solid $light-grayish;
+      border-bottom: 1px solid $light-grayish;
+      list-style: none;
+    }
+  }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
 
 }
+
