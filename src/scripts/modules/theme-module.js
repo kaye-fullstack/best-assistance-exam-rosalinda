@@ -7,8 +7,7 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-
-    const swiper_banner = new Swiper('.swiper-banner', {
+    const _swiper_banner = new Swiper('.swiper-banner', {
      autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -18,27 +17,18 @@ AppName.Modules.ThemeModule = (function () {
       },
     });
 
-    var swiper_reading = new Swiper('.swiper-reading', {
-      slidesPerView: 0,
-      spaceBetween: 0,
-      pagination: {
-        el: '.swiper-pagination-reading',
-        clickable: true,
+    var _swiper_reading = new Swiper('.swiper-reading', {
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      slidesPerView: 'auto',
+    });
+
+    var _swiperAbout = new Swiper('.swiper-mini', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      breakpoints:{
-        575:{
-          slidesPerView: 0,
-          spaceBetween: 0,
-        },
-  
-      767:{
-        slidesPerView: 0,
-        spaceBetween: 0,
-      },
-      991:{
-        slidesPerView: 0,
-        spaceBetween: 0,
-      },
+<<<<<<< HEAD
       1199:{
         slidesPerView: 0,
         spaceBetween: 0,
@@ -51,6 +41,10 @@ AppName.Modules.ThemeModule = (function () {
     };
   
   
+=======
+    });
+
+>>>>>>> c9a6efb8 (update about-page)
     function lockScroll() {
       if ($('body').hasClass('lock-scroll')) {
         $('body').removeClass('lock-scroll');
@@ -58,14 +52,13 @@ AppName.Modules.ThemeModule = (function () {
       else {
         $('body').addClass('lock-scroll');
       }
-    }  
-    
+    }    
     $(document).ready(function() {
       $('.icon-bar').click(function() {
         lockScroll();
       }); 
     });
-  
+
     $(window).scroll(function() {
       if ($(this).scrollTop() > 50){  
         $('header').addClass("sticky");
@@ -76,16 +69,32 @@ AppName.Modules.ThemeModule = (function () {
 
       console.log('scroll')
     });
+<<<<<<< HEAD
   });
+=======
+  };
+  
+
+>>>>>>> c9a6efb8 (update about-page)
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
+    _footerUp();
   };
 
   return {
     init: init,
   };
+<<<<<<< HEAD
 
  
+=======
+})();
+  var _footerUp = $('.back-to-top');
+  _footerUp.on('click', function(e){
+    e.preventDefault();
+    $("html, body").animate({scrollTop: 0 }, "slow");
+    });
+>>>>>>> c9a6efb8 (update about-page)
