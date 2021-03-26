@@ -60,7 +60,7 @@ AppName.Modules.ThemeModule = (function () {
     var _footerUp = $('.back-to-top');
     _footerUp.on('click', function(e){
       e.preventDefault();
-      $('html, body').animate({scrollTop:0}, 800);
+      $('html, body').animate({scrollTop:0}, 'slow');
       });
     
     

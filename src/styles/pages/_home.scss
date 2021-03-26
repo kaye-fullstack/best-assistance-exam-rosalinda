@@ -326,7 +326,7 @@
   }
 
   .section-reading {
-    margin-bottom: 140px;
+    margin-bottom: 205px;
     width: 100%;
     height: auto;
    
@@ -561,26 +561,25 @@
   .section-information-system {
     width: 100%;
     height: auto;
-    margin-bottom: 11.9%;
+    margin-bottom: 10.6%;
 
-    background-image: url('../assets/images/21.fw.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 56%;
+    background-color: $very-light-gray;
 
     .img-top-info {
-      display: none;
+      position: relative;
+      bottom: 61px;
+      right: 26px;
     }
 
     .img-fluid {
-      margin-top: 216px;
+      margin-top: 22px;
       margin-left: 20px;
     }
 
     .content-info {
       position: static;
 
-      padding-top: 205px;
+      padding-top: 12px;
       margin-bottom: -4.7%;
     }
 
@@ -639,8 +638,8 @@
 
     .btn-solution {
       position: relative;
-      left: 24px;
-      top: 29px;
+      left: 25px;
+      top: 27px;
 
       padding: 18px 56px;
       margin: 14px 2px;
@@ -880,7 +879,7 @@
 
     .section-reading {
       padding-bottom: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 105px;
       width: 100%;
       height: auto;
       
@@ -958,11 +957,13 @@
       margin-bottom: 17%;
       width: 100%;
       height: auto;
-
-      background-position: 11%;
      
       .img-fluid img{
         width: 100%;
+      }
+
+      .img-top-info {
+        right: 0;
       }
 
       .description {
@@ -1013,14 +1014,7 @@
         margin: 10px 5px;
       }
 
-      .content-info {
-        padding-top: 20%;
-        margin-bottom: 20%;
-        height: 701px;
-      }
-
       .img-fluid-bottom {
-        top: 2%;
         left: 4px;
       }
     }
@@ -2295,7 +2289,7 @@
           
       .img-fluid img {
         position: relative;
-        bottom: 165px;
+        bottom: -22px;
         right: 18px;;
 
         width: 105%; 
@@ -2313,7 +2307,6 @@
 
         padding-top: 0;
         padding-right: 8px;
-        height: 218px;
       }
 
       .description {
@@ -2326,7 +2319,6 @@
 
       .content {
         position: relative;
-        bottom: 83%;
 
         padding: 10px 0;
       }
@@ -2392,12 +2384,12 @@
       .img-app {
         &:first-child {
           margin: 3px 0 0 2px;
-          width: 46%;
+          width: 45%;
         }
           
         &:last-child {
           margin: 3px 7px 0 2px;
-          width: 46%;
+          width: 45%;
         }
       }
 
@@ -2486,8 +2478,6 @@
     }
   
     .section-reading {
-      margin-bottom: 74px;
-  
       .healthy-content {
         padding: 0 22px;
         margin-bottom: 0;
@@ -2575,28 +2565,9 @@
       .content {
         padding: 9px;
       }
-  
-      .img-top-info {
-        display: none;
-      }
-  
-      .img-fluid {
-        margin-top: 25%;
-        margin-left: 6%;
-      }
-
-      .content-info {
-        padding-top: 11.7%;
-        padding-right: 8%;
-        margin-bottom: -4%;
-      }
-  
+      
       .description {
         padding: 19px 53px 30px 13px;
-      }
-  
-      .img-fluid-bottom {
-        left: 25%;
       }
     }
   
@@ -2822,7 +2793,7 @@
     }
 
     .section-reading {
-      margin-bottom: 86px;
+      margin-bottom: 145px;
       width: 100%;
       height: auto;
      
@@ -3060,7 +3031,10 @@
       width: 100%;
       height: auto;
 
-      background-position: 11%;
+      .img-top-info {
+        bottom: 65px;
+        right: -4px;
+      }
 
       .img-fluid img {
         width: 100%;
@@ -3100,14 +3074,8 @@
         margin: 10px 5px;
       }
 
-      .content-info {
-        padding-top: 20%;
-        margin-bottom: 10%;
-        height: 701px;
-      }
-
       .img-fluid-bottom {
-        top: -2%;
+        top: 9%;
         left: 13px;  
       }
     }
@@ -3139,7 +3107,6 @@
 
         padding-top: 0;
         padding-right: 8px;
-        height: 185px;
       }
         
       .text-blue {
@@ -3156,7 +3123,6 @@
 
       .content {
         position: relative;
-        bottom: 83%;
 
         padding: 10px 0;
       }
@@ -3224,9 +3190,6 @@
       .text-blue {
         bottom: -1px;
       }
-      .content-info {
-        height: 192px;
-      } 
 
       .item-list {
         &:first-child {
