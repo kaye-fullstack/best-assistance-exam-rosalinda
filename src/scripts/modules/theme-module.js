@@ -23,6 +23,7 @@ AppName.Modules.ThemeModule = (function () {
       });
     };
   
+  
     function lockScroll() {
       if ($('body').hasClass('lock-scroll')) {
           $('body').removeClass('lock-scroll');
@@ -56,15 +57,14 @@ AppName.Modules.ThemeModule = (function () {
    
     window.onload = initHeader;
 
-    // private stuff
-    var _footerUp = $('.back-to-top');
-    _footerUp.on('click', function(e){
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, 'slow');
-      });
-    
-    
+   // private stuff
+  //  var _footerUp = $('.back-to-top');
+  //  _footerUp.on('click', function(e){
+  //    e.preventDefault();
+  //    $('html, body').animate({scrollTop:0}, 800);
+  //    });
    
+
   /////////////////////
   // Public Methods //
   ///////////////////
@@ -76,6 +76,7 @@ AppName.Modules.ThemeModule = (function () {
     init: init,
   };
 })();
-  
 
-
+function scrollToTop() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  }

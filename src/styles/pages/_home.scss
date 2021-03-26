@@ -1822,8 +1822,7 @@
           
       .img-fluid img {
         position: relative;
-        right: 1px;
-        bottom: 167px;
+        right: 0;
 
         width: 95%;
       }
@@ -1838,7 +1837,6 @@
         position: static;
 
         padding-top: 0; 
-        height: 237px;
       }
 
       .description {
@@ -1851,7 +1849,8 @@
 
       .content {
         position: relative;
-        bottom: 124px;
+
+        margin-bottom: 3px;
       }
           
       .item-desc {
