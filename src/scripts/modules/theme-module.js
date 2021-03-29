@@ -92,9 +92,15 @@ AppName.Modules.ThemeModule = (function () {
  
 =======
 })();
+<<<<<<< HEAD
   var _footerUp = $('.back-to-top');
   _footerUp.on('click', function(e){
     e.preventDefault();
     $("html, body").animate({scrollTop: 0 }, "slow");
     });
 >>>>>>> c9a6efb8 (update about-page)
+=======
+function scrollToTop() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+>>>>>>> c6951ce5 (update-about-page)
