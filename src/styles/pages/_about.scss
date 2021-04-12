@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
@@ -38,72 +37,18 @@
 
     .list-divider {
       border-top: 1px solid $very-light-gray;
-=======
-.about {
-
-  .side-floating {
-    position: fixed;
-    top: 31.2%;
-    right: 1px;
-    z-index: 2;
-
-    width: 57px;
-    height: 258px;
-
-    text-align: center;
-
-    background-color: $gray;
-
-    &-item {
-      padding: 10px 0 10px;
-
-      box-shadow: 0 0 25px 5px rgba(0, 0, 0, .4);
-    }
-   
-    &-icon {
-      display: block;
-      padding: 8px 8px 14px 8px;
-
-<<<<<<< HEAD
-      .list-divider {
-        border-top: 1px solid gray;
-      }
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-      text-decoration: none;
-      list-style: none;
-       
-      cursor: pointer;
-    }
-
-    .list-divider {
-      border-top: 1px solid $very-light-gray;
->>>>>>> c9a6efb8 (update about-page)
     }
   }
 
   .section-banner-about {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
     position: relative;
     padding-bottom: 571px;
     margin-top: 138px;
 
-<<<<<<< HEAD
-=======
-    padding-bottom: 507px;
-    margin-top: 121px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
->>>>>>> c9a6efb8 (update about-page)
     background-image: url('../assets/images/resized.jpg');
     background-position: center left 7px;
     background-size: cover;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     .navs-wrapper {
       position: absolute;
       top: 516px;
@@ -185,128 +130,20 @@
         }
       }
     }
-=======
-    .unstyled-items {
-=======
-    .navs-wrapper {
->>>>>>> c9a6efb8 (update about-page)
-      position: absolute;
-      top: 516px;
-
-      display: flex;
-      justify-content: center;
-
-      width: 100%;
-    }
-
-    .custom-nav {
-      position: absolute;
-      top: 0;
-
-      padding-left: 41px;
-    }
-
-    .nav-title {
-      padding-left: 14px;
-      margin-left: 0px;
-
-      font-family: $font-opensans-bold;
-      font-size: 18.1px;
-      color: $white;
-
-      background-color: $very-dark-blue;
-    }
-
-    .arrow-right-parent {
-      position: relative;
-
-      .arrow-right {
-        padding: 12px 61px;
-        padding-left: 24.9px;
-        padding-right: 32px;
-        height: 100%;
-
-        background-color: $very-dark-blue;
-        &:before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: unset;
-          right: -23px;
-          z-index: 99;
-
-          width: 0;
-          height: 0;
-          
-          border-top: 26.5px solid transparent;
-          border-bottom: 26.5px solid transparent;
-          border-left: 24px solid $very-dark-blue;  
-        }
-      }
-    }
-
-    .nav-item {
-      &:nth-child(2) {
-        background-color: $white;
-
-        .nav-link {
-          padding: 14px 61px 14px;
-
-          font-size: 18.1px;
-          color: $mostly-black;
-
-        }
-      }
-
-      &:nth-child(3),
-      &:last-child {
-        background-color: rgba(3, 3, 3, 0.7);
-
-        .nav-link {
-          padding: 14px 61px 14px;
-
-          font-size: 18.1px;
-          color: $white;
-        }
-      }
-<<<<<<< HEAD
-    } 
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-    }
->>>>>>> c9a6efb8 (update about-page)
   }
 
   .breadcrumb-wrapper {
     position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     width: 100%;
     margin: 0;
 
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background-color: $white;
-=======
-=======
-
->>>>>>> c9a6efb8 (update about-page)
-    width: 100%;
-    margin: 0;
-
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-<<<<<<< HEAD
-    background-color: white;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-    background-color: $white;
->>>>>>> c9a6efb8 (update about-page)
    
     .breadcrumb {
       position: relative;
       bottom: 2px;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
       display: flex;
       justify-content: center;
@@ -322,34 +159,10 @@
         font-size: 13px;
         color: $dark-gray;
         text-decoration: none;
-=======
-=======
-
->>>>>>> c9a6efb8 (update about-page)
-      display: flex;
-      justify-content: center;
-      padding-bottom: 9px;
-      margin: 0;
-
-      background-color: $white;
-  
-      .breadcrumb-item:not(:last-child) {
-        padding: 9px 14px;
-
-        font-family: $font-opensans-semibold;
-        font-size: 13px;
-<<<<<<< HEAD
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        color: $dark-gray;
-        text-decoration: none;
->>>>>>> c9a6efb8 (update about-page)
       }
 
       .breadcrumb-item:last-child {
         padding: 10px 9px;
-<<<<<<< HEAD
-<<<<<<< HEAD
         
         font-family: $font-opensans-semibold;
         font-size: 13px; 
@@ -364,56 +177,21 @@
         font-size: 13px;
         color: $dark-gray;
         text-decoration: none;
-=======
-        text-decoration: none;
-=======
-        
->>>>>>> c9a6efb8 (update about-page)
-        font-family: $font-opensans-semibold;
-        font-size: 13px; 
-        color: $blue;
-        text-decoration: none;
-      }
-      
-      .breadcrumb-item > a {
-        padding: 10px 9px;
-       
-        font-family: $font-opensans-semibold;
-        font-size: 13px;
-<<<<<<< HEAD
-        padding: 10px 9px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        color: $dark-gray;
-        text-decoration: none;
->>>>>>> c9a6efb8 (update about-page)
       }
 
       .fa {
         display: flex;
         align-self: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 
         margin-right: 2px;
 
         color: $dark-gray;
-<<<<<<< HEAD
-=======
-        color: #adabab;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
->>>>>>> c9a6efb8 (update about-page)
         font-size: 13px;
       }
     }
   }
 
   .section-why-us {
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-bottom: 6.7%;
     width: 100%;
     height: auto;
@@ -426,36 +204,12 @@
       height: auto;
 
       background-color: $white;
-=======
-=======
-    margin-bottom: 6.7%;
->>>>>>> c9a6efb8 (update about-page)
-    width: 100%;
-    height: auto;
-
-    background-color: $white;
-
-    .section-text-img {
-      margin: 67px 0 70px;
-      width: 100%;
-      height: auto;
-<<<<<<< HEAD
-      background-color: white;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-
-      background-color: $white;
->>>>>>> c9a6efb8 (update about-page)
      
       &:first-child {
         background-image: url('../assets/images/information-system-img2.png');
         background-repeat: no-repeat;
         background-position: left -157px bottom 102px;
         object-fit: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 
         .image-holder {
           margin-right: -9px;
@@ -491,26 +245,13 @@
           font-size: 17px;
           line-height: 26px;
         }
-<<<<<<< HEAD
       }
 
       &:nth-child(3) {
-=======
-      }
-
-      &:nth-child(3){
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-      }
-
-      &:nth-child(3) {
->>>>>>> c9a6efb8 (update about-page)
         background-image: url('../assets/images/information-system-img2.png');
         background-repeat: no-repeat;
         background-position: right -136px top;
         object-fit: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         .image-holder {
           margin-top: 45px;
@@ -547,80 +288,19 @@
           font-size: 17px;
           line-height: 26px;
         }
-=======
->>>>>>> d9ac403d (fixed about-page issue)
-      }
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-        .image-holder {
-          margin-top: 45px;
-          margin-right: -8px;
-        }
-
-        .heading {
-          margin: 45px 0 15px;
-
-          font-size: 40px;
-          font-family: $font-opensans-bold;
-        }
-        
-        .subheading {
-          font-size: 17px;
-          line-height: 26px;
-        }
-      }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-      .content {
-        display: block;
-        padding: 11px 0 11px 8px;
-=======
-      .desc-content {
-        display: block;
-        padding: 20px 10px;
-=======
-      &:last-child {
-        .image-holder {
-          margin-top: 59px;
-          margin-left: 4px;
-        }
-
-        .heading {
-          margin: 60px 0 15px;
-
-          font-size: 40px;
-          font-family: $font-opensans-bold;
-        }
-
-        .subheading {
-          font-size: 17px;
-          line-height: 26px;
-        }
->>>>>>> c9a6efb8 (update about-page)
       }
 
       .custom-container {
         max-width: 1050px;
       }
 
-<<<<<<< HEAD
-      .subheading {
-        font-size: 17px;
-        line-height: 26px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
       .content {
         display: block;
         padding: 11px 0 11px 8px;
->>>>>>> c9a6efb8 (update about-page)
       }
 
       .img-fluid {
         border-radius: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
         border-right: 8px solid $orange;
         object-fit: cover;
       }
@@ -892,298 +572,11 @@
         height: 13px;
 
         outline: none;
-=======
-        border-right: 8px solid orange;
-=======
-        border-right: 8px solid $orange;
-        object-fit: cover;
->>>>>>> c9a6efb8 (update about-page)
-      }
-
-      .ordered-first {
-        &:first-child {
-          display: flex;
-          justify-content: flex-end;
-          order: 1;
-        }
-
-        &:last-child {
-          display: flex;
-          justify-content: flex-end;
-          order: 1;
-        }
-      }
-    }
-  }
-}  
-
-@include respond-to (lg) {
-  .about {
-
-    .section-banner-about {
-      margin-top: 101px;
-
-      background-position: center left 41px;
-
-      .navs-wrapper {
-        top: 516px;
-
-        width: 98%;
-      }
-
-      .custom-nav {
-        padding: 0;
-      }
-    }
-  }
-}
-
-@include respond-to (md) {
-  .about {
-
-    .section-banner-about {
-      margin-top: 85px;
-   
-      .navs-wrapper {
-        top: 524px;
-
-        width: 98%;
-      }
-
-      .custom-nav {
-        padding: 0;
-      }
-
-      .nav-title {
-        font-size: 12.8px;
-      }
-
-      .arrow-right-parent {
-        position: relative;
-
-        .arrow-right {
-          padding: 7px 25px;
-
-          &:before {
-            right: -22px;
-            border-top: 22.5px solid transparent;
-            border-bottom: 22.5px solid transparent;
-            border-left: 23px solid $very-dark-blue;
-          }
-        }
-      }
-
-      .nav-item {
-        &:nth-child(2),
-        &:nth-child(3),
-        &:last-child {
-          .nav-link {
-            padding: 14px 24px;
-
-            font-size: 12.8px;
-          }
-        }
-      }
-
-      .breadcrumb-wrapper {
-        top: 0;
-    
-        .breadcrumb {
-          top: -2px;
-          margin: 0;
-          padding: 6px 0;
-        
-
-        &-item > a {
-            font-size: 13px;
-            padding: 7px 9px;
-          }
-        }
-      }
-
-      .section-why-us {
-        .section-text-img {
-          &:first-child {
-            background-position: left -154px bottom 14px;
-
-            .heading {
-              font-size: 24px;
-            }
-    
-            .subheading {
-              font-size: 14px;
-            } 
-          }
-
-          &:nth-child(2),
-          &:nth-child(3),
-          &:last-child {
-            .heading {
-              font-size: 24px;
-            }
-    
-            .subheading {
-              font-size: 14px;
-            } 
-          }
-        }
-      }
-    }
-  }
-}
-
-@include respond-to (sm) {
-  .about {
-
-    .side-floating {
-      display: none;
-    }
-
-    .section-banner-about {
-      padding-bottom: 303px;
-      margin-top: 76px;
-      
-      .navs-wrapper {
-        top: 301px;
-        left: 0;
-        
-        width: 100%;
-      }
-
-      .custom-nav {
-        top: -40px;
-
-        padding-left: 0;
-        width: 100%;
-
-        .nav-item {
-          &:first-child {
-            display: block;
-          }
-  
-          &:nth-child(2),
-          &:nth-child(3),
-          &:last-child {
-            display: none;
-          }
-        }
-      }
-
-      .nav-title {
-        padding-left:0;
-  
-        font-size: 15.6px;
-  
-      }
-
-      .arrow-right-parent {
-        position: relative;
-        display: block;
-
-        width: 100%;
-
-        text-align: center;
-
-        .arrow-right {
-          padding: 6px 12px;
-
-          &:before {
-            display: none;
-          }
-        }
-      }
-
-      .swiper-mobile {
-        padding-left: 0;
-        width: 100%;
-
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        
-        .swiper-mini {
-          position: relative;
-  
-          font-size: 12.8px;
-          color: $mostly-black;
-  
-          background-color: $white;
-  
-          .swiper-slide {
-            &:first-child {
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px ;
-    
-                font-family: $font-opensans-semibold;
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-           
-            &:nth-child(2) {            
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px ;
-    
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-  
-            &:last-child {
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px;
-  
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-          }
-        }
-      }
-
-      .swiper-container {
-        padding-left: 10px;
-      }
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        margin-top: -7px;
-        height: 13px;
-
-<<<<<<< HEAD
-          .nav-arrow {
-            &::before {
-              display: none;
-            }
-          }
-        }
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        outline: none;
->>>>>>> c9a6efb8 (update about-page)
       }
     }
 
     .breadcrumb-wrapper {
       top: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
       margin-top: 59px;
 
       .breadcrumb {
@@ -1205,45 +598,12 @@
           padding: 0 9px;
 
           font-size: 12.8px;
-=======
-=======
-      margin-top: 59px;
->>>>>>> c9a6efb8 (update about-page)
-
-      .breadcrumb {
-        padding: 13px 0;
-
-        .breadcrumb-item:last-child {
-          padding: 0 9px;
-
-          font-size: 12.8px;
-        }
-
-        .breadcrumb-item > a {
-          padding: 0;
-
-          font-size: 12.8px;
-        }
-
-<<<<<<< HEAD
-        .breadcrumb-item:last-child {
-          font-size: 10px;
-          padding: 7px 9px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        .breadcrumb-item:not(:last-child) {
-          padding: 0 9px;
-
-          font-size: 12.8px;
->>>>>>> c9a6efb8 (update about-page)
         }
       }
     }
 
     .section-why-us {
       .section-text-img {
-<<<<<<< HEAD
-<<<<<<< HEAD
         margin: 20px 0 21px;
 
         &:first-child {
@@ -1253,106 +613,23 @@
             display: flex;
             order: -1;
           }
-=======
-        margin: 40px 0 41px;
-=======
-        margin: 20px 0 21px;
->>>>>>> c9a6efb8 (update about-page)
-
-        &:first-child {
-          background-image: none;
-
-          .ordered-first {
-            display: flex;
-            order: -1;
-          }
-<<<<<<< HEAD
-        }
-
-        .content {
-          position: static;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
->>>>>>> c9a6efb8 (update about-page)
 
           .heading {
             position: absolute;
             top: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
             margin: 0;
 
             font-size: 20px;
           }
-
-=======
-=======
-
-            margin: 0;
-
->>>>>>> c9a6efb8 (update about-page)
-            font-size: 20px;
-          }
-<<<<<<< HEAD
-  
->>>>>>> d9ac403d (fixed about-page issue)
-          .subheading {
-            font-size: 14px;
-          }
-
-<<<<<<< HEAD
-          .image-holder {
-           margin-top: 45px;
-           margin-right: 21%;
-          }
-        }
-
-        &:nth-child(2) {
-          .heading {
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
-          }
-=======
->>>>>>> c9a6efb8 (update about-page)
 
           .subheading {
             font-size: 14px;
           }
 
           .image-holder {
-<<<<<<< HEAD
-            margin-top: 45px;
-            margin-right: 21%;
-           }
-        }
-
-        &:nth-child(3) {
-          background-image: none;
-
-          .ordered-first {
-            display: flex;
-            order: -1;
-          }
-
-          .heading {
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
-=======
-          .desc-content {
-            padding: 20px 5px;
-=======
            margin-top: 45px;
            margin-right: 21%;
->>>>>>> c9a6efb8 (update about-page)
           }
         }
 
@@ -1391,19 +668,11 @@
             margin: 0;
 
             font-size: 20px;
-<<<<<<< HEAD
-            margin: 10px 0;
-            top: -56px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
->>>>>>> c9a6efb8 (update about-page)
           }
 
           .subheading {
             font-size: 14px;
           }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -1419,50 +688,16 @@
             margin: 0;
 
             font-size: 20px;
-=======
-        }
-
-        .img-holder-people {
-          margin: 0;
-          margin-top: -1px;
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-          .image-holder {
-            margin-top: 45px;
-            margin-right: 21%;
-           }
-        }
-
-        &:last-child {
-          .heading {
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
-<<<<<<< HEAD
-            margin: 10px 0;
-            top: -56px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
->>>>>>> c9a6efb8 (update about-page)
           }
 
           .subheading {
             font-size: 14px;
           }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 
           .image-holder {
             margin-top: 45px;
             margin-right: 21%;
            }
-<<<<<<< HEAD
         }
 
         .img-fluid {
@@ -1471,32 +706,10 @@
 
         .content-position {
           position: static;
-=======
-=======
->>>>>>> c9a6efb8 (update about-page)
-        }
-
-        .img-fluid {
-          width: 55%;
-        }
-
-<<<<<<< HEAD
-          .img-fluid {
-            width: 50%;
-          }
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        .content-position {
-          position: static;
->>>>>>> c9a6efb8 (update about-page)
         }
       }
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 }
 
 @include respond-to (xs) { 
@@ -1505,7 +718,6 @@
     .side-floating {
       display: none;
     }
-<<<<<<< HEAD
 
     .section-banner-about {
       padding-bottom: 159px;
@@ -1639,152 +851,10 @@
 
         outline: none;
       }
-=======
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-    .section-banner-about {
-      padding-bottom: 159px;
-      margin-top: 76px;
-
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-
-      
-      .navs-wrapper {
-        top: 199px;
-        left: 0;
-        
-        width: 100%;
-      }
-
-      .custom-nav {
-        top: -40px;
-
-        padding-left: 0;
-        width: 100%;
-
-        .nav-item {
-          &:first-child {
-            display: block;
-          }
-  
-          &:nth-child(2),
-          &:nth-child(3),
-          &:last-child {
-            display: none;
-          }
-        }
-      }
-
-      .nav-title {
-        padding-left:0;
-  
-        font-size: 15.6px;
-      }
-
-      .arrow-right-parent {
-        position: relative;
-        display: block;
-
-        width: 100%;
-
-        text-align: center;
-
-        .arrow-right {
-          padding: 6px 12px;
-
-          &:before {
-            display: none;
-          }
-        }
-      }
-
-      .swiper-mobile {
-        width: 100%;
-
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-        
-        .swiper-mini {
-          position: relative;
-  
-          font-size: 12.8px;
-          color: $mostly-black;
-  
-          background-color: $white;
-  
-          .swiper-slide {
-            &:first-child {
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px ;
-    
-                font-family: $font-opensans-semibold;
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-           
-            &:nth-child(2) {            
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px ;
-    
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-  
-            &:last-child {
-              position: relative;
-              top: 0;
-              bottom: 0;
-  
-              width: auto !important;
-  
-              .nav-link {
-                padding: 14px 10px;
-  
-                font-size: 12.8px;
-                color: $mostly-black
-              }
-            }
-          }
-        }
-      }
-<<<<<<< HEAD
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-
-      .swiper-container {
-        padding-left: 10px;
-      }
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        margin-top: -7px;
-        height: 13px;
-
-        outline: none;
-      }
->>>>>>> c9a6efb8 (update about-page)
     }
 
     .breadcrumb-wrapper {
       top: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
       margin-top: 88px;
 
       .breadcrumb {
@@ -1806,45 +876,12 @@
           padding: 0 9px;
 
           font-size: 12.8px;
-=======
-   
-=======
-      margin-top: 88px;
-
->>>>>>> c9a6efb8 (update about-page)
-      .breadcrumb {
-        padding: 13px 0;
-
-        .breadcrumb-item:last-child {
-          padding: 0 9px;
-
-          font-size: 12.8px;
-        }
-
-        .breadcrumb-item > a {
-<<<<<<< HEAD
-          font-size: 13px;
-          padding: 7px 9px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-          padding: 0;
-
-          font-size: 12.8px;
-        }
-
-        .breadcrumb-item:not(:last-child) {
-          padding: 0 9px;
-
-          font-size: 12.8px;
->>>>>>> c9a6efb8 (update about-page)
         }
       }
     }
 
     .section-why-us {
       .section-text-img {
-<<<<<<< HEAD
-<<<<<<< HEAD
         margin: 20px 0 21px;
 
         &:first-child {
@@ -1862,45 +899,15 @@
             margin: 0;
 
             font-size: 20px;
-=======
-=======
-        margin: 20px 0 21px;
-
->>>>>>> c9a6efb8 (update about-page)
-        &:first-child {
-          background-image: none;
-
-          .ordered-first {
-            display: flex;
-            order: -1;
-          }
-
-          .heading {
-<<<<<<< HEAD
-            font-size: 24px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
->>>>>>> c9a6efb8 (update about-page)
           }
 
           .subheading {
             font-size: 14px;
           }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 
           .image-holder {
            margin-top: 45px;
           }
-<<<<<<< HEAD
         }
 
         &:nth-child(2) {
@@ -1938,62 +945,11 @@
             margin: 0;
 
             font-size: 20px;
-=======
-        }
-        
-        .img-holder {
-          margin: 0;
-=======
->>>>>>> c9a6efb8 (update about-page)
-        }
-
-        &:nth-child(2) {
-          .heading {
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
           }
 
           .subheading {
             font-size: 14px;
           }
-
-          .image-holder {
-            margin-top: 45px;
-            margin-left: 0;
-          }
-        }
-
-        &:nth-child(3) {
-          background-image: none;
-
-          .ordered-first {
-            display: flex;
-            order: -1;
-          }
-
-          .heading {
-<<<<<<< HEAD
-            font-size: 24px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
->>>>>>> c9a6efb8 (update about-page)
-          }
-
-          .subheading {
-            font-size: 14px;
-          }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -2008,36 +964,11 @@
             margin: 0;
 
             font-size: 20px;
-=======
-        }
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-          .image-holder {
-            margin-top: 45px;
-          }
-        }
-
-        &:last-child {
-          .heading {
-<<<<<<< HEAD
-            font-size: 24px;
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-            position: absolute;
-            top: 0;
-
-            margin: 0;
-
-            font-size: 20px;
->>>>>>> c9a6efb8 (update about-page)
           }
 
           .subheading {
             font-size: 14px;
           }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
           .image-holder {
             margin-top: 45px;
@@ -2051,46 +982,14 @@
 
         .content-position {
           position: static;
-=======
-        }
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-          .image-holder {
-            margin-top: 45px;
-            margin-left: 0;
-          }
-        }
-
-        .img-fluid {
-          width: 85%;
-        }
-
-<<<<<<< HEAD
-        .nav-item {
-          .nav-arrow {
-            &:before {
-              right: -15.9%;
-            }
-          }
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-        .content-position {
-          position: static;
->>>>>>> c9a6efb8 (update about-page)
         }
       }
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9a6efb8 (update about-page)
 }
 
 @media  (min-width:1200px) and (max-width: 1699px) {
   .about {
-<<<<<<< HEAD
 
     .section-banner-about {
       margin-top: 101px;
@@ -2109,30 +1008,3 @@
     }
   }
 }
-=======
-=======
->>>>>>> c9a6efb8 (update about-page)
-
-    .section-banner-about {
-      margin-top: 101px;
-
-      background-position: center left 41px;
-
-      .navs-wrapper {
-        top: 516px;
-
-        width: 98%;
-      }
-
-      .custom-nav {
-        padding: 0;
-      }
-    }
-  }
-<<<<<<< HEAD
-} 
->>>>>>> d9ac403d (fixed about-page issue)
-=======
-}
-
->>>>>>> c9a6efb8 (update about-page)

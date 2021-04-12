@@ -9,10 +9,6 @@
   height: auto;
  
   background: transparent;
-<<<<<<< HEAD
-  border-bottom: 1px solid $light-grayish;
-=======
->>>>>>> c9a6efb8 (update about-page)
 
   transition: all 0.4s;
   
@@ -50,15 +46,6 @@
       color: $light-gray;
       text-decoration: none;
       list-style: none;
-<<<<<<< HEAD
-    }
-
-    .nav-link:hover {
-     color: $dark-blue;
-     text-decoration:2px solid underline;
-     text-underline-offset: 8px;
-=======
->>>>>>> c9a6efb8 (update about-page)
     }
 
     .nav-link:hover {
@@ -120,34 +107,6 @@
     }
   }
 
-<<<<<<< HEAD
-    .nav-link:hover {
-      text-decoration: none;
-    }
-  }
-
-  .btn-lang {
-    position: relative;
-    left: 18px;
-    padding: 10px 7px 0;
-
-@media only screen and  (min-width:2000px) {
-  .section-header {
-    padding: 31px 0;
-
-    &.sticky {
-      padding: 10px 0;
-      background-color: $white;   
-    }
-
-    .navbar {
-     padding: 0;
-    }
-
-    .brand-logo {
-      left: 13px;
-    }
-=======
   .link-num {
     color: $white;
     text-decoration: none;  
@@ -156,7 +115,6 @@
   .link {
     color: $white;
     text-decoration: none; 
->>>>>>> c9a6efb8 (update about-page)
   }
 
   .link-num {
@@ -326,12 +284,6 @@
     }
 
     .brand-logo {
-<<<<<<< HEAD
-      bottom: 31px;
-      left: 14px;
-      width: 59%;
-=======
->>>>>>> c9a6efb8 (update about-page)
       bottom: 31px;
       left: 14px;
 
@@ -644,12 +596,6 @@
     .brand-logo {
       z-index: 20;
 
-<<<<<<< HEAD
-      margin-top: 5px;
-      margin-left: -10px;
-      width: 63%;
-=======
->>>>>>> c9a6efb8 (update about-page)
       margin-top: 5px;
       margin-left: -10px;
       width: 63%;
@@ -841,8 +787,3 @@
   }
 
 }
-<<<<<<< HEAD
-}
-=======
-
->>>>>>> c9a6efb8 (update about-page)
