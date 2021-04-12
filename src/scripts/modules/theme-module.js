@@ -56,15 +56,7 @@ AppName.Modules.ThemeModule = (function () {
     }
    
     window.onload = initHeader;
-
-   // private stuff
-  //  var _footerUp = $('.back-to-top');
-  //  _footerUp.on('click', function(e){
-  //    e.preventDefault();
-  //    $('html, body').animate({scrollTop:0}, 800);
-  //    });
    
-
   /////////////////////
   // Public Methods //
   ///////////////////

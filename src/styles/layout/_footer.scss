@@ -4,6 +4,12 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
 .section-footer-top {
   width: 100%;
   height: auto;
@@ -126,6 +132,80 @@
     }
   }
 
+<<<<<<< HEAD
+      .description {
+       padding: 16px 34px 13px 7px;
+        
+        font-family: $font-opensans-regular;
+        font-size: 15px;
+        color: $white;
+        line-height: 28px;
+    
+        opacity: .8;
+      }
+
+      .icon {
+        padding-left:5px;
+      }
+
+      .link {
+        padding-bottom: 5px;
+  
+        font-size: 15px;
+        color: $white;
+        text-decoration: none;
+  
+        border-bottom: 1px solid white;
+       
+        opacity: 0.9; 
+      }
+
+      .link:hover {
+        border-bottom-width: 3px;
+      }
+  
+
+    &:last-child {
+      padding: 45px 40px 38px 59px;
+
+      .icon {
+        padding-bottom: 17px;
+        padding-left: 51px;
+      }
+
+      .phone-number { 
+        display: flex;
+        margin: 27px 47px 31px;
+      
+        font-family: $font-opensans-bold;
+        font-size: 35px; 
+        color: $white;
+        line-height: 28px;
+        text-decoration: none;
+    
+        opacity: .8;
+      }
+
+      .link {
+        padding-bottom: 5px;
+        margin-left: 54px;
+  
+        font-size: 15px;
+        color: $white;
+        text-decoration: none;
+  
+        border-bottom: 1px solid white;
+      
+        opacity: 0.9;
+      }
+
+      .link:hover {
+        border-bottom-width: 3px;
+      }
+    }
+
+=======
+>>>>>>> c9a6efb8 (update about-page)
   .footer-boxes {
     padding: 0 60px 0 50px;
   }
@@ -175,6 +255,24 @@
     text-decoration: none;
     color: $mostly-black;
   }
+<<<<<<< HEAD
+}
+
+@media only screen and (min-width:2000px) {
+  .section-footer-top {
+    .footer-boxes {
+      padding: 0px 68px 0 62px;
+    }
+
+    .footer-box {
+      padding: 45px 59px 38px 59px;
+    }
+
+    .box-center {
+      padding: 40px 96px 38px 99px;
+    }
+=======
+>>>>>>> c9a6efb8 (update about-page)
 
   .link:hover {
     color: $dark-blue;
@@ -240,6 +338,25 @@
       padding: 0;
     }
 
+<<<<<<< HEAD
+      &:nth-child(2) {
+        padding: 23px 0px 15px 33px;
+
+        border: none;
+
+        .icon > img {
+          margin-top: 3px;
+          margin-left: 3px;
+          width: 18%
+        }
+
+        .description {
+          padding: 6px 0 4px 7px;
+          margin-bottom: 0;
+          
+          font-size: 14px; 
+          line-height: 24px;
+=======
     .box {
       &:first-child {
         padding: 23px 10px 15px 17px;
@@ -255,6 +372,7 @@
 
           font-size: 14px; 
           line-height: 24px; 
+>>>>>>> c9a6efb8 (update about-page)
         }
 
         .link {
@@ -264,16 +382,30 @@
         }
       }
 
+<<<<<<< HEAD
+      &:last-child {
+        padding: 23px 10px 15px 17px;
+
+
+        .icon {
+          padding-bottom: 12px;
+          padding-left: 44px;
+        }
+=======
       &:nth-child(2) {
         padding: 23px 0px 15px 33px;
 
         border: none;
+>>>>>>> c9a6efb8 (update about-page)
 
         .icon > img {
           margin-top: 3px;
           margin-left: 3px;
           width: 18%
         }
+<<<<<<< HEAD
+
+=======
 
         .description {
           padding: 6px 0 4px 7px;
@@ -305,6 +437,7 @@
           width: 18%
         }
 
+>>>>>>> c9a6efb8 (update about-page)
         .phone-number {
           margin: 7px 15px 46px 44px;
     
@@ -346,12 +479,16 @@
     width: 100%;
     height: auto;
 
-    .footer-boxes {
-      padding: 20px 0;
-    }
+        .link {
+          font-size: 12px;
+        }
 
+<<<<<<< HEAD
+      &:nth-child(2) {
+=======
     .box {
       &:first-child {
+>>>>>>> c9a6efb8 (update about-page)
         padding: 29px 36px 9px 39px;
 
         .icon > img {
@@ -361,11 +498,23 @@
         .description {
           padding: 23px 0 10px 7px;
 
+<<<<<<< HEAD
+        font-size: 14px;
+=======
           font-size: 14px;
+>>>>>>> c9a6efb8 (update about-page)
         }
 
         .link {
           font-size: 12px;
+<<<<<<< HEAD
+        } 
+      }
+
+      &:last-child {
+        padding: 29px 36px 9px 39px;
+
+=======
         }
       }
 
@@ -390,6 +539,7 @@
       &:last-child {
         padding: 29px 36px 9px 39px;
 
+>>>>>>> c9a6efb8 (update about-page)
         .icon {
           padding-left: 5px;
         }
@@ -411,7 +561,11 @@
           font-size: 12px;
         }
       }
+<<<<<<< HEAD
+    
+=======
     }
+>>>>>>> c9a6efb8 (update about-page)
 
     .text-contact {
       display: block;
@@ -445,6 +599,88 @@
      padding: 0 10px 11px;
     }
 
+<<<<<<< HEAD
+        .description {
+          padding: 23px 8px 0 7px;
+
+          line-height: 24px;
+        }
+
+        .link {
+          margin-left: 9px;
+          font-size: 12px;
+        }
+      
+
+      &:last-child {
+        padding: 20px 0 5px;
+
+        .icon {
+          padding-top: 20px;
+          padding-bottom: 0;
+          padding-left: 8px;
+          
+        }
+
+        .icon > img {
+          width: 31px;
+        }
+
+        .phone-number {
+          margin: 3px 8px 8px;
+    
+          font-size: 24px;
+        }
+
+        .link {
+          margin-left: 9px;
+
+          font-size: 12px; 
+        }
+      }
+    
+
+    .text-contact {
+      display: block;
+      padding: 11px 8px 2px;
+      margin-bottom: 0;
+
+      font-size: 14px; 
+      color: white;
+    }
+
+    .footer-koein {
+      display: block;
+      margin: 36px 0 6px -13px;
+
+      font-size: 13px;
+      color: $white;
+    }
+  }
+
+  .section-footer-bottom {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:2000px) {
+  .section-footer-top {
+    .footer-boxes {
+      padding: 0px 68px 0 62px;
+    }
+
+    .box {
+      &:first-child {
+        padding: 45px 59px 38px 59px;
+      }
+
+      &:nth-child(2) {
+        padding: 40px 96px 38px 99px;
+      }
+
+      &:last-child {
+        padding: 45px 59px 38px 59px;
+=======
     .box {
       &:first-child {
         padding: 20px 0 5px;
@@ -514,11 +750,23 @@
 
           font-size: 12px; 
         }
+>>>>>>> c9a6efb8 (update about-page)
       }
     }
 
     .text-contact {
       display: block;
+<<<<<<< HEAD
+      margin-top: 16px;
+
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .phone-number {
+      font-size: 35px;
+      margin-bottom: 20px;
+=======
       padding: 11px 8px 2px;
       margin-bottom: 0;
 
@@ -532,11 +780,53 @@
 
       font-size: 13px;
       color: $white;
+>>>>>>> c9a6efb8 (update about-page)
     }
   }
 
   .section-footer-bottom {
-    display: none;
+    .icon-items {
+      padding: 14px 4px 14px 6px;
+    }
+  }
+}
+
+@media  (min-width:1200px) and (max-width: 1699px) {
+  .section-footer-top {
+    width: 100%;
+    height: auto;
+
+    .footer-boxes {
+      padding: 0 16px 0 12px;
+    }
+
+    .box {
+      &:first-child {
+        padding: 34px 20px 50px 10px;
+      }
+
+      &:nth-child(2) {
+        padding: 34px 10px 50px 17px;
+
+        .description {
+          padding: 7px 12px 13px 7px;
+        }
+      }
+
+      &:last-child {
+        padding: 34px 20px 50px 10px;
+
+        .phone-number {
+          margin: 27px 3px 54px 40px;
+        }
+      }
+    }
+
+    .phone-number {
+      margin-bottom: 78px;
+
+      font-size: 33px;
+    }
   }
 }
 

@@ -9,7 +9,6 @@
   height: auto;
  
   background: transparent;
-  border-bottom: 1px solid $light-grayish;
 
   transition: all 0.4s;
   
@@ -80,11 +79,17 @@
     position: relative;
     left: 18px;
     padding: 10px 7px 0;
+    
+    background-color: $dark-blue;
+    border-radius: 25px;
+
+    cursor: pointer;
 
     .lang-select {
-      margin-top: -6px;
-      margin-right: 34px;
-
+      margin-top: -4px;
+      margin-right: 21px;
+      height: auto;
+    
       font-size: 14px;
       color: $white;
       
@@ -98,12 +103,18 @@
     .arrow-select {
       position: absolute;
       bottom: 21px;
-      left: 56px;
+      left: 48px;
     }
+  }
 
-    select.form-control:not([size]):not([multiple]) {
-      height: calc(2.25rem + 9px);
-    }
+  .link-num {
+    color: $white;
+    text-decoration: none;  
+  }
+
+  .link {
+    color: $white;
+    text-decoration: none; 
   }
 
   .link-num {
@@ -141,25 +152,23 @@
 
     .navbar-nav {
       .nav-item {
-        margin-right: 6px;
+        margin-right: 3px;
       }
 
       .nav-link {
         padding: 14px 5px;
-        font-size: 12px;
+        font-size: 13px;
       }
     }
 
     .btn-num {
-      left: 16px;
+      left: 8px;
 
       padding: 6px 11px 8px;
   
       .nav-link {
         display: unset;
         padding: 0;
-
-        font-size: 12px;
       }
 
       .icon-holder {
@@ -170,32 +179,16 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 12px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-top: -8px;
+        margin-right: 13px;
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
-      }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
+        bottom: 20px;
+        left: 68%;
       }
     }
 
@@ -319,7 +312,7 @@
      }
 
      .btn-num {
-      left: 30px;
+      left: 41px;
 
       display: block;
       padding: 0;
@@ -341,12 +334,9 @@
        }
 
        .arrow-select {
-        left: 56px;
+        bottom: 18px;
+        left: 46px;
        }
-
-       select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 6px);
-      }
      }
    }
 
@@ -737,7 +727,7 @@
     }
 
     .btn-num {
-      left: 15px;
+      left: 8px;
 
       padding: 6px 11px 8px;
   
@@ -754,32 +744,16 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 14px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-top: -8px;
+        margin-right: 13px;  
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
-      }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
+        bottom: 20px;
+        left: 68%;
       }
     }
   }
@@ -813,4 +787,3 @@
   }
 
 }
-
