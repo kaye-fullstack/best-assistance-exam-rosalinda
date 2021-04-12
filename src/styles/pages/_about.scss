@@ -1,5 +1,11 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
 
 .about {
+
   .side-floating {
     position: fixed;
     top: 31.2%;
@@ -554,7 +560,6 @@
 
     .breadcrumb-wrapper {
       top: 0;
-
       margin-top: 59px;
 
       .breadcrumb {
@@ -584,13 +589,11 @@
       .section-text-img {
         margin: 20px 0 21px;
 
-        &:first-child,
-        &:nth-child(3) {
+        &:first-child {
           background-image: none;
 
           .ordered-first {
             display: flex;
-            justify-content: unset;
             order: -1;
           }
 
@@ -609,11 +612,57 @@
 
           .image-holder {
            margin-top: 45px;
-           margin-right: 0;
+           margin-right: 21%;
           }
         }
 
-        &:nth-child(2),
+        &:nth-child(2) {
+          .heading {
+            position: absolute;
+            top: 0;
+
+            margin: 0;
+
+            font-size: 20px;
+          }
+
+          .subheading {
+            font-size: 14px;
+          }
+
+          .image-holder {
+            margin-top: 45px;
+            margin-right: 21%;
+           }
+        }
+
+        &:nth-child(3) {
+          background-image: none;
+
+          .ordered-first {
+            display: flex;
+            order: -1;
+          }
+
+          .heading {
+            position: absolute;
+            top: 0;
+
+            margin: 0;
+
+            font-size: 20px;
+          }
+
+          .subheading {
+            font-size: 14px;
+          }
+
+          .image-holder {
+            margin-top: 45px;
+            margin-right: 21%;
+           }
+        }
+
         &:last-child {
           .heading {
             position: absolute;
@@ -630,17 +679,16 @@
 
           .image-holder {
             margin-top: 45px;
-            margin-left: 0;
-          }
+            margin-right: 21%;
+           }
         }
 
         .img-fluid {
-          width: 80%;
+          width: 55%;
         }
 
-        .content-image {
-          display: flex;
-          flex-flow: nowrap;
+        .content-position {
+          position: static;
         }
       }
     }
@@ -649,6 +697,7 @@
 
 @include respond-to (xs) { 
   .about {
+    
     .side-floating {
       display: none;
     }
@@ -795,14 +844,44 @@
       .section-text-img {
         margin: 20px 0 21px;
 
-        &:first-child,
-        &:nth-child(3) {
+        &:first-child {
           background-image: none;
 
           .ordered-first {
             display: flex;
-            justify-content: unset;
             order: -1;
+          }
+
+          .heading {
+            position: absolute;
+            top: 0;
+
+            margin: 0;
+
+            font-size: 20px;
+          }
+
+          .subheading {
+            font-size: 14px;
+          }
+
+          .image-holder {
+           margin-top: 45px;
+          }
+        }
+
+        &:nth-child(2) {
+          .heading {
+            position: absolute;
+            top: 0;
+
+            margin: 0;
+
+            font-size: 20px;
+          }
+
+          .subheading {
+            font-size: 14px;
           }
 
           .image-holder {
@@ -822,10 +901,6 @@
           .subheading {
             font-size: 14px;
           }
-        }
-
-        &:nth-child(2),
-        &:last-child {
           .image-holder {
             margin-top: 45px;
             margin-left: 0;
@@ -843,15 +918,19 @@
           .subheading {
             font-size: 14px;
           }
+
+          .image-holder {
+            margin-top: 45px;
+            margin-left: 0;
+          }
         }
 
         .img-fluid {
           width: 80%;
         }
 
-        .content-image {
-          display: flex;
-          flex-flow: nowrap;
+        .content-position {
+          position: static;
         }
       }
     }
