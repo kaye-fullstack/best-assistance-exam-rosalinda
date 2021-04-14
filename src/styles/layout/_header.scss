@@ -1,3 +1,9 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
 .section-header {
   position: fixed;
   top: 0;
@@ -107,26 +113,6 @@
       bottom: 21px;
       left: 48px;
     }
-  }
-
-  .link-num {
-    color: $white;
-    text-decoration: none;  
-  }
-
-  .link {
-    color: $white;
-    text-decoration: none; 
-  }
-
-  .link-num {
-    color: $white;
-    text-decoration: none;  
-  }
-
-  .link {
-    color: $white;
-    text-decoration: none; 
   }
 }
 
@@ -270,7 +256,6 @@
     }
 
     .brand-logo {
-      bottom: 31px;
       left: 14px;
 
       width: 59%; 
@@ -806,29 +791,4 @@
   .lock-scroll {
     overflow: hidden;
   }
-}
-
-@media (max-width: 399px) and  (min-width: 321px) {
-  .section-header {
-    .unstyled-social-items {
-      position: absolute;
-      bottom: 63px;
-      right: 0;
-
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 15px;
-      margin: 0;
-      width: 100%;
-      
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
-      list-style: none;
-    }
-  }
-
-  .lock-scroll {
-    overflow: hidden;
-  }
-
 }
