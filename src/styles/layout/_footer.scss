@@ -41,10 +41,10 @@
         border-bottom: 1px solid $white;
        
         opacity: .9;
-      }
 
-      .link:hover {
-        border-bottom-width: 3px;
+        &:hover {
+          border-bottom-width: 3px;
+        }
       }
     }
 
@@ -76,7 +76,7 @@
         color: $white;
         text-decoration: none;
   
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
        
         opacity: 0.9; 
       }
@@ -419,7 +419,7 @@
       margin-bottom: 0;
 
       font-size: 14px;
-      color: white; 
+      color: $white; 
     }
 
     .footer-koein {
@@ -427,7 +427,7 @@
       padding: 23px 27px 10px;
 
       font-size: 13px;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -523,7 +523,7 @@
       margin-bottom: 0;
 
       font-size: 14px; 
-      color: white;
+      color: $white;
     }
 
     .footer-koein {
@@ -547,16 +547,13 @@
     }
 
     .box {
-      &:first-child {
+      &:first-child,
+      &:last-child {
         padding: 45px 59px 38px 59px;
       }
 
       &:nth-child(2) {
         padding: 40px 96px 38px 99px;
-      }
-
-      &:last-child {
-        padding: 45px 59px 38px 59px;
       }
     }
 
@@ -565,7 +562,7 @@
       margin-top: 16px;
 
       font-size: 15px;
-      color: #fff;
+      color: $white;
     }
 
     .phone-number {

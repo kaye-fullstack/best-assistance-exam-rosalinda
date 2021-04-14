@@ -1,3 +1,9 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
 .section-header {
   position: fixed;
   top: 0;
@@ -9,7 +15,6 @@
   height: auto;
  
   background: transparent;
-  border-bottom: 1px solid $light-grayish;
 
   transition: all 0.4s;
   
@@ -65,6 +70,7 @@
     background-color: $yellowish;
     border-radius: 25px;
 
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
 
     .num-desc {
@@ -80,11 +86,18 @@
     position: relative;
     left: 18px;
     padding: 10px 7px 0;
+    
+    background-color: $dark-blue;
+    border-radius: 25px;
+
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 
     .lang-select {
-      margin-top: -6px;
-      margin-right: 34px;
-
+      margin-top: -4px;
+      margin-right: 21px;
+      height: auto;
+    
       font-size: 14px;
       color: $white;
       
@@ -98,22 +111,8 @@
     .arrow-select {
       position: absolute;
       bottom: 21px;
-      left: 56px;
+      left: 48px;
     }
-
-    select.form-control:not([size]):not([multiple]) {
-      height: calc(2.25rem + 9px);
-    }
-  }
-
-  .link-num {
-    color: $white;
-    text-decoration: none;  
-  }
-
-  .link {
-    color: $white;
-    text-decoration: none; 
   }
 }
 
@@ -141,25 +140,23 @@
 
     .navbar-nav {
       .nav-item {
-        margin-right: 6px;
+        margin-right: 3px;
       }
 
       .nav-link {
         padding: 14px 5px;
-        font-size: 12px;
+        font-size: 13px;
       }
     }
 
     .btn-num {
-      left: 16px;
+      left: 8px;
 
       padding: 6px 11px 8px;
   
       .nav-link {
         display: unset;
         padding: 0;
-
-        font-size: 12px;
       }
 
       .icon-holder {
@@ -170,71 +167,40 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 12px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-top: -8px;
+        margin-right: 13px;
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
-      }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
+        bottom: 20px;
+        left: 68%;
       }
     }
-
-    // .btn-lang {
-    //   left: 8px;
-
-    //   .lang-select {
-    //     // margin-top: -8px;
-    //     // margin-right: 13px;
-    //   }
-
-    //   .arrow-select {
-    //     bottom: 20px;
-    //     left: 68%;
-    //   }
-    // }
   }
 }
 
 @include respond-to (md){
   .section-header {
-    padding: 17px 0;
+    padding: 20px 5px;
     width: 100%;
     height: auto;
 
     border-bottom: none;
    
     &.sticky {
-      padding: 8px 0;
+      padding: 12px 5px;
     }
 
     .navbar {
       padding: 0;
-      height: 44px;
     }
 
     .collapse {
       position: fixed;
-      top: 63px;
+      top: 80px;
       right: -100%;
       bottom: 0;
       z-index: 2000;
@@ -251,7 +217,7 @@
 
     .collapsing {
       position: fixed;
-      top: 63px;
+      top: 80px;
       bottom: 0;
       right: -100%;
 
@@ -271,7 +237,6 @@
     .navbar-toggler {
       .icon-bar {
         position: relative;
-        bottom: 19px;
         right: 17px;
         
         display: block;
@@ -291,81 +256,89 @@
     }
 
     .brand-logo {
-      bottom: 31px;
       left: 14px;
 
       width: 59%; 
     }
 
     .navbar-nav {
-      .nav-link {
-        padding: 11px 13px;
-        margin-bottom: 10px;
+      padding-right: 0;
 
+      .nav-link {
         font-family: $font-opensans-semibold;
         font-size: 13px;
       }
     }
   
-   .btn-num,
-   .btn-lang {
-     display: none;
-   }
+    .btn-num,
+    .btn-lang {
+      display: none;
+    }
 
-   #excluded-btn {
-     .nav-link {
-      display: block;
-      padding: 11px 19px 3px; 
-     }
+    #excluded-btn {
+      display: flex;
+      flex-direction: row;
+      margin-right: 43px;
 
-     .btn-num {
-      left: 30px;
+        .btn-lang {
+          display: block;
 
-      display: block;
-      padding: 0;
+          transition: all 0.2s ease-in-out;
 
-      .num-desc {
-        font-size: 13px;
+          .arrow-select {
+            bottom: 17px;
+            left: 50px;
+          }
+        }
+
+        .btn-num {
+          display: block;
+
+          transition: all 0.2s ease-in-out;
+        }
+    }
+
+    .list-social-item {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+
+      .link {
+        color: $white;
       }
-     }
-
-     .btn-lang {
-       bottom: 43px;
-       left: 95%;
-
-       display: block;
-       padding: 11px 3px 3px;
-
-       .lang-select {
-        margin-top: -9px;
-       }
-
-       .arrow-select {
-        left: 56px;
-       }
-
-       select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 6px);
+      
+      &:first-child {
+        background-color: $dark-gray;
       }
-     }
-   }
+
+      &:nth-child(2) {
+        background-color: $orange;
+      }
+
+      &:last-child {
+        background-color: $light-green;
+      }
+    }
 
     .unstyled-social-items {
       position: absolute;
+      bottom: 80px;
       right: 0;
-      bottom: 63px;
-  
+
       display: flex;
       justify-content: space-between;
       padding: 10px 15px;
       margin: 0;
       width: 100%;
-      
-      list-style: none;
 
       background-color: $white;
       border-top: 1px solid $light-grayish;
       border-bottom: 1px solid $light-grayish;
+      list-style: none;
     }
   }
 
@@ -399,7 +372,7 @@
       
     .collapse {
       position: fixed;
-      top: 63px;
+      top: 80px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -417,7 +390,7 @@
 
     .collapsing {
       position: fixed;
-      top: 63px;
+      top: 80px;
       bottom: 0;
       right: -100%;
 
@@ -503,9 +476,35 @@
       }
     }
 
+    .list-social-item {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+
+      .link {
+        color: $white;
+      }
+      
+      &:first-child {
+        background-color: $dark-gray;
+      }
+
+      &:nth-child(2) {
+        background-color: $orange;
+      }
+
+      &:last-child {
+        background-color: $light-green;
+      }
+    }
+
     .unstyled-social-items {
       position: absolute;
-      bottom: 63px;
+      bottom: 80px;
       right: 0;
 
       display: flex;
@@ -515,10 +514,9 @@
       width: 100%;
 
       background-color: $white;
-      list-style: none;
-
       border-top: 1px solid $light-grayish;
       border-bottom: 1px solid $light-grayish;
+      list-style: none;
     }
   }
 
@@ -549,7 +547,7 @@
 
     .collapse {
       position: fixed;
-      top: 63px;
+      top: 80px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -566,7 +564,7 @@
 
     .collapsing {
       position: fixed;
-      top: 63px;
+      top: 80px;
       bottom: 0;
       right: -100%; 
 
@@ -655,13 +653,35 @@
       }
     }
 
-    .link {
-      margin-right: 67px;
+    .list-social-item {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+
+      .link {
+        color: $white;
+      }
+      
+      &:first-child {
+        background-color: $dark-gray;
+      }
+
+      &:nth-child(2) {
+        background-color: $orange;
+      }
+
+      &:last-child {
+        background-color: $light-green;
+      }
     }
 
     .unstyled-social-items {
       position: absolute;
-      bottom: 63px;
+      bottom: 80px;
       right: 0;
 
       display: flex;
@@ -737,7 +757,7 @@
     }
 
     .btn-num {
-      left: 15px;
+      left: 8px;
 
       padding: 6px 11px 8px;
   
@@ -754,32 +774,16 @@
     }
 
     .btn-lang {
-      position: relative;
-      left: 18px;
-      padding: 10px 7px 0;
-  
+      left: 8px;
+
       .lang-select {
-        margin-top: -6px;
-        margin-right: 34px;
-  
-        font-size: 14px;
-        color: $white;
-        
-        background-color: $dark-blue;
-        border-radius: 25px;
-        border: none;
-  
-        appearance: none;
+        margin-top: -8px;
+        margin-right: 13px;  
       }
-  
+
       .arrow-select {
-        position: absolute;
-        bottom: 21px;
-        left: 56px;
-      }
-  
-      select.form-control:not([size]):not([multiple]) {
-        height: calc(2.25rem + 9px);
+        bottom: 20px;
+        left: 68%;
       }
     }
   }
@@ -788,29 +792,3 @@
     overflow: hidden;
   }
 }
-
-@media (max-width: 399px) and  (min-width: 321px) {
-  .section-header {
-    .unstyled-social-items {
-      position: absolute;
-      bottom: 63px;
-      right: 0;
-
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 15px;
-      margin: 0;
-      width: 100%;
-      
-      border-top: 1px solid $light-grayish;
-      border-bottom: 1px solid $light-grayish;
-      list-style: none;
-    }
-  }
-
-  .lock-scroll {
-    overflow: hidden;
-  }
-
-}
-
