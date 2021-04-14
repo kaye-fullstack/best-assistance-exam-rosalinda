@@ -6,8 +6,10 @@ AppName.Modules.ThemeModule = (function () {
   // Private Methods //
   ////////////////////
   const _privateMethod = () => {
-    var _swiperMini = new Swiper('.swiper-container');
 
+    var _swiperMini= new Swiper('.swiper-mini', {
+    });
+ 
     var _swiperReading = new Swiper('.swiper-reading', {
       watchSlidesProgress: true,
       watchSlidesVisibility: true,
@@ -18,14 +20,13 @@ AppName.Modules.ThemeModule = (function () {
       autoplay: {
       delay: 2500,
       disableOnInteraction: false,
-    },
+      },
        pagination: {
          el: '.swiper-pagination-banner',
         },
       });
     };
-  
-  
+
     function lockScroll() {
       if ($('body').hasClass('lock-scroll')) {
           $('body').removeClass('lock-scroll');
@@ -65,6 +66,8 @@ AppName.Modules.ThemeModule = (function () {
   const init = function () {
     _privateMethod();
     _swiperMini();
+    _swiperReading();
+    _swiperBanner();
   };
 
   return {
@@ -74,4 +77,5 @@ AppName.Modules.ThemeModule = (function () {
 
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
-  }
+  } 
+
