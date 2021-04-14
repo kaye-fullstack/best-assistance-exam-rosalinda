@@ -6,6 +6,8 @@ AppName.Modules.ThemeModule = (function () {
   // Private Methods //
   ////////////////////
   const _privateMethod = () => {
+    var _swiperMini = new Swiper('.swiper-container');
+
     var _swiperReading = new Swiper('.swiper-reading', {
       watchSlidesProgress: true,
       watchSlidesVisibility: true,
@@ -57,19 +59,12 @@ AppName.Modules.ThemeModule = (function () {
    
     window.onload = initHeader;
 
-   // private stuff
-  //  var _footerUp = $('.back-to-top');
-  //  _footerUp.on('click', function(e){
-  //    e.preventDefault();
-  //    $('html, body').animate({scrollTop:0}, 800);
-  //    });
-   
-
   /////////////////////
   // Public Methods //
   ///////////////////
   const init = function () {
     _privateMethod();
+    _swiperMini();
   };
 
   return {
